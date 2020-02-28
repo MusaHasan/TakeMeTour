@@ -2,12 +2,10 @@
   <v-container>
     <v-row class="text-center">
       <v-col cols="12">
-        <v-img
-          :src="require('../assets/logo.svg')"
-          class="my-3"
-          contain
-          height="200"
-        />
+        <video-bg :sources="['https://d34z6m0qj7i7g9.cloudfront.net/v5-assets/static/video/banner-short.mp4']" img="someURL">
+        <!-- <video-bg :sources="['../assets/BGvideo/banner-short.mp4']" img=""> -->
+        <!-- If you want to add content here, a slot is waiting! -->
+        </video-bg> 
       </v-col>
 
       <v-col class="mb-4">
@@ -92,8 +90,14 @@
 </template>
 
 <script>
+import VideoBg from 'vue-videobg'
+
   export default {
     name: 'HelloWorld',
+
+    components: {
+      VideoBg
+    },
 
     data: () => ({
       ecosystem: [
