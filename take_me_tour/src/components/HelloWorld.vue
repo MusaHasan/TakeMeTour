@@ -1,11 +1,22 @@
 <template>
-  <v-container>
-    <v-row class="text-center">
-      <v-col cols="12">
-        <video-bg :sources="['https://d34z6m0qj7i7g9.cloudfront.net/v5-assets/static/video/banner-short.mp4']" img="someURL">
-        <!-- <video-bg :sources="['../assets/BGvideo/banner-short.mp4']" img=""> -->
-        <!-- If you want to add content here, a slot is waiting! -->
-        </video-bg> 
+  <v-container fluid class="pa-0">
+    <video-bg class="mt-9 bg-dark" fluid :sources="['https://d34z6m0qj7i7g9.cloudfront.net/v5-assets/static/video/banner-short.mp4']" img="someURL">
+    <!-- <video-bg :sources="['../assets/BGvideo/banner-short.mp4']" img="someURL"> -->
+      <v-container class="bgGrayTanspherent white--text" max-he style="background-color: #00000082;" fluid>
+        <v-row class="my-12 py-12 text-center">
+          <v-col>
+              <h2 class="headTitl-1 font-weight-medium">Explore Thailand & Southeast Asia with</h2>
+              <h1 class="headTitl-2 ">Local Experts</h1>
+            
+            <v-img class="d-inline-block HeaderBodyImg" max-height="125" max-width="125"  src="../assets/images/asset 4.png"></v-img>
+            <v-img class="d-inline-block HeaderBodyImg" max-height="125" max-width="125" src="../assets/images/asset 5.png"></v-img>
+          </v-col>
+        </v-row>
+      </v-container>
+    </video-bg>
+    <v-row class="text-center pa-0 ma-0">
+      <v-col class="pa-0 ma-0" cols="12">
+         
       </v-col>
 
       <v-col class="mb-4">
@@ -90,14 +101,9 @@
 </template>
 
 <script>
-import VideoBg from 'vue-videobg'
 
   export default {
     name: 'HelloWorld',
-
-    components: {
-      VideoBg
-    },
 
     data: () => ({
       ecosystem: [
@@ -153,3 +159,45 @@ import VideoBg from 'vue-videobg'
     }),
   }
 </script>
+<style>
+.headTitl-1{
+ font-size: 35px;
+ font-family: Montserrat;
+}
+.headTitl-2{
+font-size: 75px;
+font-family: Montserrat, Open+Sans;
+}
+.bgGrayTanspherent{
+  height: 100%;
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
+.VideoBg{
+  height: 234px!important;
+  }
+.display-4{
+  font-size: 30px !important;
+  font-weight: 300;
+  line-height: 1rem;
+}
+.display-2{
+  font-size: 14px !important;
+  font-weight: 400;
+  line-height: 3.125rem;
+}
+.HeaderBodyImg{
+  height: 75px;
+  width: 75px;
+}
+}
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1224px) {
+  .VideoBg{
+      height: 424px!important;
+    }
+}
+  
+</style>
