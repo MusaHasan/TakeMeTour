@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-      <v-row class="ml-12  searchSec transparent" justify-md="center">
-          <v-col class="searchCol" sm="6" xs="4"  md="8" cols="8">
+      <v-row class="searchSec transparent" justify-md="center">
+          <v-col class="searchCol" sm="6" xs="4" md="8" cols="8">
               
             <v-overflow-btn
             class="white"
@@ -178,6 +178,7 @@
             margin: 0 11%!important;
             position: relative;
             top: -50px;
+            margin-left: 48px;
         }
     .v-text-field__details{
         margin-bottom: -21px!important;
@@ -188,11 +189,13 @@
     .searchCol{
         background-color: #F8FBFB;
         border-radius: 10px 0 0 0;
+        margin-left: 36px;
+        margin-right: 0;
     } 
     .buttonCol{
         background-color: #F8FBFB;
         border-radius: 0 10px 0 0;
-        padding: 14px 20px!important;
+        padding: 14px 4px!important;
     }  
     .searchBtn{
         padding: 0 50px!important;
@@ -203,16 +206,19 @@
         .searchSec{
         position: relative;
         top: -34px;
-        width: 96%;
-        margin: 0!important;
+        margin-left: 30px !important;
+        width: auto;
         }
         .searchCol{
         background-color: #f8fbfb00;
         border-radius: 0;
+        margin-left: 23px;
+        margin-right: -36px;
         } 
         .buttonCol{
             background-color: #f8fbfb00;
             border-radius: 0;
+            margin: 0 26px;
         } 
         .searchBtn{
             padding: 0px 3px!important;
@@ -233,6 +239,8 @@
         .searchCol{
         background-color: #f0f8ff00;
         border-radius: 0;
+        margin-left: 0px;
+        margin-right: 0;
         } 
         .buttonCol{
             background-color: #f0f8ff00;
