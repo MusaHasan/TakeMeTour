@@ -6,6 +6,7 @@
     <travelProduct/>
     <takeMeTour/>
     <popularDestination/>
+    <travelersReview/>
 
   </div>
 </template>
@@ -18,6 +19,7 @@ import findTour from '@/components/FindTour.vue'
 import travelProduct from '@/components/TravelProduct.vue'
 import takeMeTour from '@/components/TakeMeTour.vue'
 import popularDestination from '@/components/PopularDestination.vue'
+import travelersReview from '@/components/TravelersReview.vue'
 
 export default {
   name: 'Home',
@@ -27,7 +29,8 @@ export default {
     findTour,
     travelProduct,
     takeMeTour,
-    popularDestination
+    popularDestination,
+    travelersReview
   }
 }
 </script>

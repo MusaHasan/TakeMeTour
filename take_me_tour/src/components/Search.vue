@@ -3,6 +3,40 @@
       <v-row class="searchSec transparent" justify-md="center">
           <v-col class="searchCol" sm="6" xs="4" md="8" cols="8">
               
+              <!-- <v-menu transition="slide-x-transition" offset-y >
+                    <template v-slot:activator="{ on }">
+                        <v-btn color="secondary" v-on="on" text small>
+                            Button
+                            <v-avatar size="28" class="pl-1">
+                                <img
+                                >
+                            </v-avatar>
+                            <v-icon right>mdi-chevron-down</v-icon>
+                        </v-btn>
+                    </template>
+                    <v-list dense nav min-width="200">
+                        <div v-if="! $route.path.includes('dashboard')">
+                            <v-list-item class="text-left" dense v-for="item in nav_items" :key="item.title" :to="item.url">
+                                <v-list-item-icon class="mr-3">
+                                    <v-icon color="grey darken-2" class="body-1">{{ item.icon }}</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title  class="caption grey--text text--darken-3">{{ item.title }}</v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+                            <v-divider></v-divider>
+                        </div>
+                        <v-list-item class="text-left">
+                            <v-list-item-icon class="mr-3">
+                                <v-icon color="grey darken-2" class="body-1"> mdi-exit-to-app </v-icon>
+                            </v-list-item-icon>
+                            <v-list-item-content>
+                                <v-list-item-title class="caption grey--text text--darken-3"></v-list-item-title>
+                            </v-list-item-content>
+                        </v-list-item>
+                    </v-list>
+                </v-menu> -->
+
             <v-overflow-btn
             class="white"
             color="orange darken-3"
@@ -72,7 +106,7 @@
   export default {
 
     data: () => ({
-      dropdown_font: ['Arial', 'Calibri', 'Courier', 'Verdana','Arial', 'Calibri', 'Courier', 'Verdana'],
+      dropdown_font: ['Arial', 'Calibri', 'Courier', 'Verdana','erert', 'erter', 'trtr', '434'],
       dropdown_icon: [
         { text: 'list', callback: () => console.log('list') },
         { text: 'favorite', callback: () => console.log('favorite') },

@@ -27,7 +27,7 @@
                     height="100%"
                     :src="require(`../assets/images/${image.name}`)"
                 >
-                    
+                  <div class="fill-height pl-4 body-1">{{image.txt}}</div>                    
                 </v-img>
               </v-card>
               
@@ -43,28 +43,28 @@ export default {
      data:()=>({
         images:[
             {
-                name:'asset 42.jpeg', label:'asset 7.png'
+                name:'asset 42.jpeg', txt:'Phuket'
             },
             {
-                name:'asset 43.jpeg', label:'asset 8.png'
+                name:'asset 43.jpeg', txt:'Siem Reap'
             },
             {
-                name:'asset 44.jpeg', label:'asset 9.png'
+                name:'asset 44.jpeg', txt:'Saigon'
             },
             {
-                name:'asset 45.jpeg', label:'asset 10.png'
+                name:'asset 45.jpeg', txt:'Manila'
             },
             {
-                name:'asset 46.jpeg', label:'asset 11.png'
+                name:'asset 46.jpeg', txt:'Bangkok'
             },
             {
-                name:'asset 47.jpeg', label:'asset 12.png'
+                name:'asset 47.jpeg', txt:'Bali'
             },
             {
-                name:'asset 48.jpeg', label:'asset 12.png'
+                name:'asset 48.jpeg', txt:'Chiang Mai'
             },
             {
-                name:'asset 49.jpeg', label:'asset 12.png'
+                name:'asset 49.jpeg', txt:'Phnom Penh'
             }
         ]
     })
