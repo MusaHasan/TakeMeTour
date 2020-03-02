@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 FootbgColor">
   <v-container>
       <v-row>
-          <v-col cols="3" class="px-12">
+          <v-col md="3" lg="3" xl="3" cols="12" class="px-12">
               <h4>Currency</h4>
               <v-row>
                     <v-overflow-btn
@@ -29,7 +29,7 @@
               </v-row>
           </v-col>
 
-          <v-col cols="3">
+          <v-col md="3" lg="3" xl="3" cols="12">
               <h4>About TakeMeTour</h4>
               <v-row>
                     <v-list-item>
@@ -47,7 +47,7 @@
                   </v-list-item> 
               </v-row>
           </v-col>
-          <v-col cols="3">
+          <v-col md="3" lg="3" xl="3" cols="12">
               <h4>Top Destinations</h4>
               <v-row>
                   <v-list-item>
@@ -57,7 +57,7 @@
                   </v-list-item> 
               </v-row>
           </v-col>
-          <v-col cols="3">
+          <v-col md="3" lg="3" xl="3" cols="12">
               <h4>Top Activities</h4>
               <v-row>
                   <v-list-item>

@@ -97,7 +97,7 @@
                 </v-select> -->
           </v-col>
           <v-col width="auto" class="buttonCol" sm="2" xs="2" cols="2">
-            <v-btn max-width="150" max-height="48" height="48" class="searchBtn" color="orange darken-3" dark>Explore</v-btn>
+            <v-btn max-width="150" max-height="48" height="48" class="searchBtn text-capitalize font-weight-bold subtitle-1" color="orange darken-3" dark>Explore</v-btn>
           </v-col>
       </v-row>
     

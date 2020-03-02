@@ -3,7 +3,6 @@
     <Navbar/>
 
     <v-content>
-      <!-- <HelloWorld/> -->
       <Home/>
     </v-content>
     <Footer/>
@@ -13,7 +12,6 @@
 <script>
 
 import Navbar from './components/Navbar';
-// import HelloWorld from './components/HelloWorld';
 import Home from './views/Home';
 import Footer from './components/Footer';
 
@@ -21,7 +19,6 @@ export default {
   name: 'App',
 
   components: {
-    // HelloWorld,
     Navbar,
     Home,
     Footer

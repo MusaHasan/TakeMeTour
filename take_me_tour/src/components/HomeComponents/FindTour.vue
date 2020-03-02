@@ -10,9 +10,9 @@
               </v-col>
           </v-col>
 
-          <v-col cols="6" class="mb-0 pb-0">
+          <v-col md="4" lg="2" xl="2" cols="6" class="mb-0 pb-0">
               <v-row>
-              <v-col class="images" cols="4" v-for="(image,i) in images" :key="i">
+              <v-col class="images" md="4" lg="4" xl="4" cols="12" v-for="(image,i) in images" :key="i">
                   <v-img 
                     class="white--text align-end"
                     height="206px"
