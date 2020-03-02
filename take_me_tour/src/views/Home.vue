@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <backgroundVdo/>
     <getInspired/>
     <tourAvailable/>
     <findTour/>
@@ -13,17 +14,19 @@
 
 <script>
 // @ is an alias to /src
-import getInspired from '@/components/GetInspired.vue'
-import tourAvailable from '@/components/ToursAvailable.vue'
-import findTour from '@/components/FindTour.vue'
-import travelProduct from '@/components/TravelProduct.vue'
-import takeMeTour from '@/components/TakeMeTour.vue'
-import popularDestination from '@/components/PopularDestination.vue'
-import travelersReview from '@/components/TravelersReview.vue'
+import backgroundVdo from '@/components/HomeComponents/BackVideo.vue'
+import getInspired from '@/components/HomeComponents/GetInspired.vue'
+import tourAvailable from '@/components/HomeComponents/ToursAvailable.vue'
+import findTour from '@/components/HomeComponents/FindTour.vue'
+import travelProduct from '@/components/HomeComponents/TravelProduct.vue'
+import takeMeTour from '@/components/HomeComponents/TakeMeTour.vue'
+import popularDestination from '@/components/HomeComponents/PopularDestination.vue'
+import travelersReview from '@/components/HomeComponents/TravelersReview.vue'
 
 export default {
   name: 'Home',
   components: {
+    backgroundVdo,
     getInspired,
     tourAvailable,
     findTour,

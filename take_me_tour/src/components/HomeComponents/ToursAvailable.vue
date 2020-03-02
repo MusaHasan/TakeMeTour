@@ -1,4 +1,5 @@
 <template>
+<v-container fluid class="pa-0 BodyBGcolot">
     <v-container>
       <v-row >
           <h2 class="mx-10">Get Inspired</h2>
@@ -23,7 +24,7 @@
                     class="white--text align-end"
                     height="206px"
                     width="270px"
-                    :src="require(`../assets/images/${image.name}`)"
+                    :src="require(`../../assets/images/${image.name}`)"
                     >
                     </v-img>
 
@@ -42,6 +43,7 @@
         </v-sheet>
       </v-row>
     </v-container>
+  </v-container>
 </template>
 
 <script>

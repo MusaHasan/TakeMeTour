@@ -1,4 +1,5 @@
 <template>
+<v-container fluid class="pa-0 BodyBGcolot">
   <v-container>
       <v-row >
           <h2 class="mx-10">Get Inspired</h2>
@@ -28,7 +29,7 @@
                          <v-list-item-avatar color="grey darken-3">
                             <v-img
                                 class="elevation-6"
-                                :src="require(`../assets/images/${image.avatar}`)"
+                                :src="require(`../../assets/images/${image.avatar}`)"
                             ></v-img>
                         </v-list-item-avatar>
                     </v-col>
@@ -40,7 +41,7 @@
                                         class="white--text d-inline-block"
                                         height="20"
                                         width="30"
-                                        :src="require(`../assets/images/${image.flag}`)"
+                                        :src="require(`../../assets/images/${image.flag}`)"
                                     >
                                     </v-img> {{image.country}}</v-list-item-title>
                         </v-list-item-content>
@@ -70,7 +71,9 @@
           </v-slide-group>
         </v-sheet>
       </v-row>
-    </v-container>
+  </v-container>
+</v-container>
+
 </template>
 
 <script>

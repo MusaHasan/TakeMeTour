@@ -1,7 +1,8 @@
 <template>
+<v-container fluid class="pa-0 BodyBGcolot">
   <v-container>
       <v-row >
-          <h2 class="mx-10">Get Inspired</h2>
+        <h2 class="mx-10">Get Inspired</h2>
         <v-sheet
           class="mx-auto"
           elevation="0"
@@ -15,27 +16,29 @@
               :key="i"
               v-slot:default="{ active, toggle }"
             >
+              
               <v-card
-                :color="active ? 'primary' : 'grey lighten-1'"
+                :color="active ? 'primary' : 'white lighten-1'"
                 class="ma-1"
-                height="216"
-                width="216"
+                height="150"
+                width="178"
                 @click="toggle"
               >
                 <v-img
-                    class="white--text img align-end"
-                    height="100%"
-                    :src="require(`../assets/images/${image.name}`)"
+                class="white--text mt-6 mx-auto"
+                height="62"
+                width="70"
+                :src="require(`../../assets/images/${image.name}`)"
                 >
-                  <div class="fill-height pl-4 body-1">{{image.txt}}</div>                    
                 </v-img>
+                <p class="text-center">4g sim card</p>
               </v-card>
-              
             </v-slide-item>
           </v-slide-group>
         </v-sheet>
       </v-row>
-    </v-container>
+  </v-container>
+</v-container>
 </template>
 
 <script>
@@ -43,28 +46,28 @@ export default {
      data:()=>({
         images:[
             {
-                name:'asset 42.jpeg', txt:'Phuket'
+                name:'asset 32.svg', label:'asset 7.png'
             },
             {
-                name:'asset 43.jpeg', txt:'Siem Reap'
+                name:'asset 33.svg', label:'asset 8.png'
             },
             {
-                name:'asset 44.jpeg', txt:'Saigon'
+                name:'asset 34.svg', label:'asset 9.png'
             },
             {
-                name:'asset 45.jpeg', txt:'Manila'
+                name:'asset 35.svg', label:'asset 10.png'
             },
             {
-                name:'asset 46.jpeg', txt:'Bangkok'
+                name:'asset 36.svg', label:'asset 11.png'
             },
             {
-                name:'asset 47.jpeg', txt:'Bali'
+                name:'asset 37.svg', label:'asset 12.png'
             },
             {
-                name:'asset 48.jpeg', txt:'Chiang Mai'
+                name:'asset 38.svg', label:'asset 12.png'
             },
             {
-                name:'asset 49.jpeg', txt:'Phnom Penh'
+                name:'asset 39.svg', label:'asset 12.png'
             }
         ]
     })

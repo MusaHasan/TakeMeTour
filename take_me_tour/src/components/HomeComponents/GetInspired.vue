@@ -1,4 +1,5 @@
 <template>
+<v-container fluid class="pa-0 BodyBGcolot">
     <v-container>
       <v-row >
           <h2 class="mx-10">Get Inspired</h2>
@@ -29,7 +30,7 @@
                 <v-img
                     class="white--text img align-end"
                     :height="hover ? '110%':'100%'"
-                    :src="require(`../assets/images/${image.name}`)"
+                    :src="require(`../../assets/images/${image.name}`)"
                 >
                     <v-row
                     class="fill-height"
@@ -40,7 +41,7 @@
                         <v-img
                             class="white--text align-end hoverIf"
                             height="100%"
-                            :src="require(`../assets/images/${image.label}`)"
+                            :src="require(`../../assets/images/${image.label}`)"
                         >
                         </v-img>
                     </v-row>
@@ -53,6 +54,7 @@
         </v-sheet>
       </v-row>
     </v-container>
+  </v-container>
 </template>
 
 <script>

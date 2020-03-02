@@ -8,8 +8,8 @@
               <h2 class="headTitl-1 font-weight-medium">Explore Thailand & Southeast Asia with</h2>
               <h1 class="headTitl-2 ">Local Experts</h1>
             
-            <v-img class="d-inline-block HeaderBodyImg pa-4" max-height="130" max-width="130"  src="../assets/images/asset 4.png"></v-img>
-            <v-img class="d-inline-block HeaderBodyImg pa-4" max-height="130" max-width="130" src="../assets/images/asset 5.png"></v-img>
+            <v-img class="d-inline-block HeaderBodyImg pa-4" max-height="130" max-width="130"  src="../../assets/images/asset 4.png"></v-img>
+            <v-img class="d-inline-block HeaderBodyImg pa-4" max-height="130" max-width="130" src="../../assets/images/asset 5.png"></v-img>
           </v-col>
         </v-row>
       </v-container>

@@ -1,4 +1,5 @@
 <template>
+<v-container fluid class="pa-0 BodyBGcolot">
   <v-container>
       <v-row class="pt-12 mt-12 mx-6">
           <div class="backgroundTMT">
@@ -19,7 +20,7 @@
                     class="white--text align-end"
                     height="100%"
                     width="100%"
-                    src="../assets/images/asset 41.png"
+                    src="../../assets/images/asset 41.png"
                     >
                     </v-img>
               </v-col>
@@ -29,6 +30,7 @@
           </div>
       </v-row>
   </v-container>
+</v-container>
 </template>
 
 <script>

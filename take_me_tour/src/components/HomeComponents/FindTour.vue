@@ -1,4 +1,5 @@
 <template>
+<v-container fluid class="pa-0 BodyBGcolot">
   <v-container>
       <v-row class="pt-12 mt-12 mx-6">
           <div class="background">
@@ -16,7 +17,7 @@
                     class="white--text align-end"
                     height="206px"
                     width="270px"
-                    :src="require(`../assets/images/${image.name}`)"
+                    :src="require(`../../assets/images/${image.name}`)"
                     >
                     </v-img>
               </v-col>
@@ -26,6 +27,7 @@
           </div>
       </v-row>
   </v-container>
+</v-container>
 </template>
 
 <script>
@@ -58,5 +60,8 @@ export default {
     .images{
         margin: -90px -15px;
         padding-bottom: 0;
+    }
+    .BodyBGcolot{
+        background-color: #F8FBFB;
     }
 </style>

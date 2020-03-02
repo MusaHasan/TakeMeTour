@@ -1,4 +1,5 @@
 <template>
+<v-container fluid class="pa-0 BodyBGcolot">
   <v-container fluid>
       <v-row class="searchSec transparent" justify-md="center">
           <v-col class="searchCol" sm="6" xs="4" md="8" cols="8">
@@ -101,6 +102,7 @@
       </v-row>
     
   </v-container>
+</v-container>
 </template>
 <script>
   export default {
