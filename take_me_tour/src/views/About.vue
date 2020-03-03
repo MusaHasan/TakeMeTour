@@ -1,5 +1,23 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <imageSlide/>
+    <tourDetail/>
+    <bottomNavbar/>
   </div>
 </template>
+<script>
+import imageSlide from '@/components/TourDetails/ImageSlider.vue'
+import tourDetail from '@/components/TourDetails/StreetFoodTr.vue'
+import bottomNavbar from '@/components/TourDetails/BottomNav.vue'
+
+export default {
+  components:{
+    imageSlide,
+    tourDetail,
+    bottomNavbar,
+  }
+}
+</script>
+<style >
+
+</style>

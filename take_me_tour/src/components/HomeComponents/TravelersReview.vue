@@ -14,15 +14,13 @@
             <v-slide-item
               v-for="(image,i) in images"
               :key="i"
-              v-slot:default="{ active, toggle }"
               class="ml-2 transparent"
             >
               <v-card
-                :color="active ? 'primary' : 'grey lighten-1'"
                 class="ma-1 TrvRevCrd"
                 height="170"
                 width="369"
-                @click="toggle"
+                :ripple="false"
               >
                 <v-row>
                     <v-list-item class="grow">

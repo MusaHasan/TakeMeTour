@@ -3,7 +3,7 @@
     <Navbar/>
 
     <v-content>
-      <Home/>
+      <router-view></router-view>
     </v-content>
     <Footer/>
   </v-app>
@@ -50,6 +50,9 @@ export default {
         }
         .TitelTxt{
           margin: 4px!important;
+        }
+        .BodyBGcolot{
+          background-color: #F8FBFB;
         }
     }
 </style>

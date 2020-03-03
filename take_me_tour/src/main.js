@@ -3,7 +3,9 @@ import App from './App.vue'
 import router from './router'
 import vuetify from './plugins/vuetify';
 import VideoBg from 'vue-videobg'
+import VueCarousel from 'vue-carousel';
 
+Vue.use(VueCarousel);
 Vue.component('video-bg', VideoBg)
 Vue.config.productionTip = false
 

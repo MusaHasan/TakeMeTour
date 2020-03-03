@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 BodyBGcolot">
   <v-container class="childContainer">
       <v-row >
-        <h2 class="TitelTxt">Get Inspired</h2>
+        <h2 class="TitelTxt">Travel Products</h2>
         <v-sheet
           class="mx-auto transparent"
           elevation="0"
@@ -14,16 +14,14 @@
             <v-slide-item
               v-for="(image,i) in images"
               :key="i"
-              v-slot:default="{ active, toggle }"
-              class="ml-2 transparent"
+              class="ml-2"
             >
               
               <v-card
-                :color="active ? 'primary' : 'white lighten-1'"
                 class="ma-1 TeProCrd"
                 height="150"
                 width="178"
-                @click="toggle"
+                :ripple="false"
               >
                 <v-img
                 class="white--text mt-6 mx-auto"
@@ -32,7 +30,7 @@
                 :src="require(`../../assets/images/${image.name}`)"
                 >
                 </v-img>
-                <p class="text-center">4g sim card</p>
+                <p class="text-center body-2">4G Sim Card</p>
               </v-card>
             </v-slide-item>
           </v-slide-group>
@@ -76,6 +74,12 @@ export default {
 </script>
 
 <style>
+.TeProCrd{
+  background-color: #FFFFFF!important;
+  cursor: pointer;
+  border-radius: 12px!important;
+  box-shadow: rgba(36, 75, 82, 0.1) 0px 3px 5px 0px;
+}
 @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {

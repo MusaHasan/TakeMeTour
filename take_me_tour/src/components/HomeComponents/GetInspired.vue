@@ -18,14 +18,15 @@
               class="ml-2 transparent"
             >
               <v-hover
-                    v-slot:default="{ hover }"
-                    open-delay="200"
+                  v-slot:default="{ hover }"
+                  open-delay="200"
                 >
               <v-card
                 :color="active ? 'primary' : 'grey lighten-1'"
                 class="ma-1 imgCrd"
                 height="320"
                 width="218"
+                :ripple="false"
                 @click="toggle"
               >
                 <v-img

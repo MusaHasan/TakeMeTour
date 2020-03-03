@@ -5,23 +5,57 @@
           <v-col md="3" lg="3" xl="3" cols="12" class="px-12">
               <h4>Currency</h4>
               <v-row>
-                    <v-overflow-btn
-                    class="my-2"
-                    :items="dropdown_icon"
-                    label="Segmented Btn"
-                    segmented
-                    target="#dropdown-example"
-                    ></v-overflow-btn>
+                    <div class="text-center">
+                        <v-menu offset-y>
+                        <template v-slot:activator="{ on }">
+                            <v-btn
+                            color="white"
+                            class="socialIc mb-6"
+                            height="48"
+                            width="206"
+                            dark
+                            v-on="on"
+                            >
+                            <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                            </v-btn>
+                        </template>
+                        <v-list>
+                            <v-list-item
+                            v-for="(item, index) in items"
+                            :key="index"
+                            >
+                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                        </v-menu>
+                    </div>
               </v-row>
               <h4>Country</h4>
               <v-row>
-                    <v-overflow-btn
-                    class="my-2"
-                    :items="dropdown_icon"
-                    label="Segmented Btn"
-                    segmented
-                    target="#dropdown-example"
-                    ></v-overflow-btn>
+                    <div class="text-center">
+                        <v-menu offset-y>
+                        <template v-slot:activator="{ on }">
+                            <v-btn
+                            color="white"
+                            class="socialIc mb-6"
+                            height="48"
+                            width="206"
+                            dark
+                            v-on="on"
+                            >
+                            <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                            </v-btn>
+                        </template>
+                        <v-list>
+                            <v-list-item
+                            v-for="(item, index) in items"
+                            :key="index"
+                            >
+                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                        </v-menu>
+                    </div>
               </v-row>
               <h4>Follow us on</h4>
               <v-row>
@@ -130,19 +164,12 @@ export default {
             {txt:'Street Food'},
             {txt:'Property Tours'},
         ],
-        dropdown_font: ['Arial', 'Calibri', 'Courier', 'Verdana'],
-        dropdown_icon: [
-            { text: 'list', callback: () => console.log('list') },
-            { text: 'favorite', callback: () => console.log('favorite') },
-            { text: 'delete', callback: () => console.log('delete') },
-        ],
-        dropdown_edit: [
-            { text: '100%' },
-            { text: '75%' },
-            { text: '50%' },
-            { text: '25%' },
-            { text: '0%' },
-        ],
+        items: [
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me' },
+        { title: 'Click Me 2' },
+      ],
     })
 }
 </script>
@@ -154,4 +181,11 @@ export default {
     .FootbgColor{
         background-color: #F0F5F7;
     }
+    .v-input__control{
+        height: 34px!important;
+    }
+    .v-autocomplete.v-input{
+        border-style: hidden!important;
+    }
+    
 </style>

@@ -39,7 +39,7 @@
                 </v-menu> -->
 
             <v-overflow-btn
-            class="white"
+            class="white Search-btn"
             color="orange darken-3"
             :items="dropdown_font"
             label="Overflow Btn"
@@ -221,6 +221,13 @@
     }
     .v-input__append-inner{
         margin-top: 0!important;
+    }
+    .Search-btn{
+        box-shadow: rgba(36, 75, 82, 0.1) 0px 3px 5px 0px!important;
+        height: 48px!important;
+        border: 1px solid rgb(238, 243, 245)!important;
+        border-radius: 4px!important;
+        transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;  
     }
     .searchCol{
         background-color: #F8FBFB;
