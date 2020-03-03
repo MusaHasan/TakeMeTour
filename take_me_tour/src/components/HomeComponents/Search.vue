@@ -1,6 +1,6 @@
 <template>
 <v-container fluid class="pa-0 BodyBGcolot">
-  <v-container fluid>
+  <v-container fluid class="childContainer">
       <v-row class="searchSec transparent" justify-md="center">
           <v-col class="searchCol" sm="6" xs="4" md="8" cols="8">
               
@@ -97,7 +97,7 @@
                 </v-select> -->
           </v-col>
           <v-col width="auto" class="buttonCol" sm="2" xs="2" cols="2">
-            <v-btn max-width="150" max-height="48" height="48" class="searchBtn text-capitalize font-weight-bold subtitle-1" color="orange darken-3" dark>Explore</v-btn>
+            <v-btn max-width="133" max-height="48" height="48" class="searchBtn text-capitalize font-weight-bold subtitle-1" color="orange darken-3" dark>Explore</v-btn>
           </v-col>
       </v-row>
     
@@ -248,13 +248,13 @@
         .searchCol{
         background-color: #f8fbfb00;
         border-radius: 0;
-        margin-left: 23px;
-        margin-right: -36px;
+        margin-left: 0px;
+       
         } 
         .buttonCol{
             background-color: #f8fbfb00;
             border-radius: 0;
-            margin: 0 26px;
+            margin: 0px 18px;
         } 
         .searchBtn{
             padding: 0px 3px!important;
@@ -285,5 +285,18 @@
         .searchBtn{
             padding:0 28px;
         }  
+    }
+    @media (min-width: 1904px){
+    .searchCol{
+        background-color: #F8FBFB;
+        border-radius: 10px 0 0 0;
+        margin-left: 36px;
+        margin-right: 0;
+    } 
+    .buttonCol{
+        background-color: #F8FBFB;
+        border-radius: 0 10px 0 0;
+        padding: 14px 4px!important;
+    }  
     }
 </style>

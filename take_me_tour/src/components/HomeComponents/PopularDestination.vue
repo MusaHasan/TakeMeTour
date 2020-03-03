@@ -1,10 +1,10 @@
 <template>
 <v-container fluid class="pa-0 BodyBGcolot">
-  <v-container>
+  <v-container class="childContainer">
       <v-row >
-          <h2 class="mx-10">Get Inspired</h2>
+          <h2 class="TitelTxt">Popular Destinations</h2>
         <v-sheet
-          class="mx-auto"
+          class="mx-auto transparent"
           elevation="0"
           max-width="100%"
         >
@@ -15,10 +15,11 @@
               v-for="(image,i) in images"
               :key="i"
               v-slot:default="{ active, toggle }"
+              class="ml-2 transparent"
             >
               <v-card
                 :color="active ? 'primary' : 'grey lighten-1'"
-                class="ma-1"
+                class="ma-1 PopDesCrd"
                 height="216"
                 width="216"
                 @click="toggle"
@@ -74,5 +75,13 @@ export default {
 </script>
 
 <style>
+@media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 767px) {
+    .PopDesCrd{
+      width: 125px!important;
+      height: 125px!important;
+    }
+ }
 
 </style>

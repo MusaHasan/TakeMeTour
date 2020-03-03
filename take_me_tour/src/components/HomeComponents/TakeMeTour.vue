@@ -1,19 +1,19 @@
 <template>
 <v-container fluid class="pa-0 BodyBGcolot">
-  <v-container>
-      <v-row class="pt-12 mt-12 mx-6">
+  <v-container class="childContainer Con-orengBg">
+      <v-row class="pt-12 mt-12 orengBg">
           <div class="backgroundTMT">
-          <v-col cols="8" class="px-8 white--text">
-              <h2 class="headtxt py-5">What’s a Day Like with TakeMeTour?</h2>
-              <p>Unlike others, all tours are led by true Local Experts. They’ll open your eyes to see much more than what your typical guidebooks suggest. 
+          <v-col md="8" lg="8" xl="8" cols="12" class="px-8 white--text">
+              <h2 class="headtxt py-5">What’s a Day Like with <span class="headTxtFocus">TakeMeTour?</span> </h2>
+              <p class="bodytxt">Unlike others, all tours are led by true Local Experts. They’ll open your eyes to see much more than what your typical guidebooks suggest. 
                   Book any tour & be one with the locals. It’s a lifetime experience you simply can’t find anywhere else!
               </p>
-              <p>
+              <p class="bodytxt">
                   Tell me more
               </p>
           </v-col>
 
-          <v-col cols="4" class="mb-0 pa-0">
+          <v-col md="" lg="4" xl="4" cols="12" class="mb-0 pa-0">
               <v-row>
               <v-col class="imagesTMT pl-0" >
                   <v-img 
@@ -41,6 +41,10 @@ export default {
 </script>
 
 <style>
+    .orengBg{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
     .backgroundTMT{
         max-width: 100%!important;
         display: flex;
@@ -55,5 +59,32 @@ export default {
     }
     .headtxt{
         width: 34%;
+    }
+     @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 767px) {
+        .imagesTMT{
+            margin-top: -17px;
+            padding-bottom: 0;
+        }
+        .headtxt{
+            width: 100%;
+            text-align: center
+
+        }
+        .headTxtFocus{
+            font-size: 30px;
+        }
+        .bodytxt{
+            text-align: center
+        }
+        .orengBg{
+            margin-left: 0;
+            margin-right: 0;
+            
+        }
+        .Con-orengBg{
+            padding: 0!important;
+        }
     }
 </style>

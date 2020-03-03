@@ -1,10 +1,10 @@
 <template>
 <v-container fluid class="pa-0 BodyBGcolot">
-    <v-container>
+    <v-container class="childContainer">
       <v-row >
-          <h2 class="mx-10">Get Inspired</h2>
+          <h2 class="TitelTxt">Tour Available Tomorrow</h2>
         <v-sheet
-          class="mx-auto"
+          class="mx-auto transparent "
           elevation="0"
           max-width="100%"
         >
@@ -14,9 +14,10 @@
             <v-slide-item
               v-for="(image,i) in images"
               :key="i"
+              class="ml-2 transparent"
             >
                 <v-card
-                    class="mx-auto"
+                    class="mx-auto TurAvCrd"
                     max-width="100%"
                     max-height="355"
                 >
@@ -92,4 +93,13 @@ export default {
     min-width: 27px!important;
     background-color: #fffafa00;
   }
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 767px) {
+      .TurAvCrd{
+        width: 273px!important;
+        height: 209px!important;
+      }
+    }
+
 </style>

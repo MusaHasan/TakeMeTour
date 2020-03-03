@@ -1,6 +1,6 @@
 <template>
 <v-container fluid class="pa-0 FootbgColor">
-  <v-container>
+  <v-container class="childContainer">
       <v-row>
           <v-col md="3" lg="3" xl="3" cols="12" class="px-12">
               <h4>Currency</h4>
