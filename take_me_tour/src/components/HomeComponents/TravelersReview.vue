@@ -4,7 +4,7 @@
       <v-row >
           <h2 class="TitelTxt">Traveler's Reviews</h2>
         <v-sheet
-          class="mx-auto transparent"
+          class="mx-auto mb-8 transparent"
           elevation="0"
           max-width="100%"
         >
@@ -14,12 +14,13 @@
             <v-slide-item
               v-for="(image,i) in images"
               :key="i"
-              class="ml-2 transparent"
+              class="ml-2"
             >
               <v-card
                 class="ma-1 TrvRevCrd"
                 height="170"
                 width="369"
+                elevation="0"
                 :ripple="false"
               >
                 <v-row>
@@ -111,7 +112,9 @@ export default {
     padding: 0 17px!important;
     font-size: small;
 } 
-
+.TrvRevCrd{
+  background-color: #244b521a!important;
+}
 @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {

@@ -6,7 +6,7 @@
           <v-col cols="6">
               <h2 class="findTxt">Find the right tour for you</h2>
               <v-col width="auto">
-                    <v-btn max-width="150" max-height="48" height="48" class="searchBtn" color="orange darken-3" dark>Try this quiz!</v-btn>
+                    <v-btn max-width="150" max-height="40" :ripple="false" height="40" class="srcBtn">Try this quiz! <v-icon class="ps-2">mdi-chevron-right</v-icon> </v-btn>
               </v-col>
           </v-col>
 
@@ -66,6 +66,18 @@ export default {
         margin: -90px -15px;
         padding-bottom: 0;
     }
+    .findTxt{
+        font-size: 20px;
+        font-weight: 500;
+        color: #4d4d5b;
+    }
+    .srcBtn{
+            width: fit-content;
+            padding: 8px 12px!important;
+            border-radius: 8px!important;
+            background: rgb(255, 121, 35)!important;
+            color: #ffffff!important;
+    }
     
     @media only screen
     and (min-device-width : 320px)
@@ -78,7 +90,7 @@ export default {
             font-size: 14px;
             font-weight: 300;
         }
-        .searchBtn{
+        .srcBtn{
             padding: 0px 15px!important;
             margin: 0px -14px;
         }

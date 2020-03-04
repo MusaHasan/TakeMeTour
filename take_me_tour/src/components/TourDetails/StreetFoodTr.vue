@@ -1,9 +1,9 @@
 <template>
-  <v-container fluid>
-      <v-container>
+  <v-container fluid class="pa-0">
+      <v-container class="childContainer">
         <v-row>
             <v-col md="8" lg="8" xl="8" cols="12">
-                
+                <messenger/>
             </v-col><!--Mother Col 1-->
             <v-col cols="4" class="hidden-sm-and-down">
             
@@ -14,10 +14,10 @@
 </template>
 
 <script>
-
+import messenger from './StrFoodComponents/Messenger'
 export default {
     components:{
-        
+        messenger,
     }
 
 }

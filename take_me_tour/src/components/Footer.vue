@@ -8,16 +8,21 @@
                     <div class="text-center">
                         <v-menu offset-y>
                         <template v-slot:activator="{ on }">
-                            <v-btn
-                            color="white"
-                            class="socialIc mb-6"
-                            height="48"
-                            width="206"
-                            dark
-                            v-on="on"
-                            >
-                            <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
-                            </v-btn>
+                            <v-hover v-slot:default="{ hover }">
+                                <v-btn
+                                class="active socialIc mb-6"
+                                height="48"
+                                width="206"
+                                :ripple="false"
+                                light
+                                v-on="on"
+                                @click="isActive1=!isActive1"
+                                :elevation="hover ? 12 : 2"
+                                :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
+                                >
+                                    <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                                </v-btn>
+                            </v-hover>
                         </template>
                         <v-list>
                             <v-list-item
@@ -35,16 +40,20 @@
                     <div class="text-center">
                         <v-menu offset-y>
                         <template v-slot:activator="{ on }">
-                            <v-btn
-                            color="white"
-                            class="socialIc mb-6"
-                            height="48"
-                            width="206"
-                            dark
-                            v-on="on"
-                            >
-                            <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
-                            </v-btn>
+                            <v-hover v-slot:default="{ hover }">
+                                <v-btn
+                                class="socialIc mb-6"
+                                height="48"
+                                width="206"
+                                :ripple="false"
+                                @click="isActive2=!isActive2"
+                                v-on="on"
+                                :elevation="hover ? 12 : 2"
+                                :class="{ 'on-hover': hover, activeBtn2 : isActive2 }"
+                                >
+                                    <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                                </v-btn>
+                            </v-hover>
                         </template>
                         <v-list>
                             <v-list-item
@@ -109,6 +118,8 @@
 <script>
 export default {
     data:()=>({
+        isActive1: false,
+        isActive2: false,
         icons:[
             {name: "mdi-facebook"}, {name: "mdi-instagram"}, {name: "mdi-pinterest"}, {name: "mdi-twitter"}
         ],
@@ -165,11 +176,11 @@ export default {
             {txt:'Property Tours'},
         ],
         items: [
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me' },
-        { title: 'Click Me 2' },
-      ],
+            { title: 'Click Me' },
+            { title: 'Click Me' },
+            { title: 'Click Me' },
+            { title: 'Click Me 2' },
+        ],
     })
 }
 </script>
@@ -177,6 +188,10 @@ export default {
 <style>
     .socialIc{
         color: #2F424C!important;
+        transition: opacity .4s ease-in-out!important;
+    }
+    .socialIc:not(.on-hover) {
+    opacity: 0.6!important;
     }
     .FootbgColor{
         background-color: #F0F5F7;
@@ -186,6 +201,10 @@ export default {
     }
     .v-autocomplete.v-input{
         border-style: hidden!important;
+    }
+    .activeBtn1,.activeBtn2{
+         border: 1px solid #ff7b00!important;
+         background-color: white!important;
     }
     
 </style>

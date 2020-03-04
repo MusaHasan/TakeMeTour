@@ -31,8 +31,15 @@ export default {
 </script>
 <style>
 .TitelTxt{
-  margin: 40px;
-}
+    font-weight: 600!important;
+    font-size: 26px;
+    color: #4d4d5b;
+    line-height: 9px;
+    margin: 40px;
+  }
+  .v-btn{
+    text-transform: capitalize!important;
+  }
 @media only screen and (min-width: 1264px) 
   and ( max-width: 2000px){
   .BodyBGcolot{

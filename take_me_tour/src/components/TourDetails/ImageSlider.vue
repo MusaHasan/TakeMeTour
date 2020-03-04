@@ -1,6 +1,6 @@
 <template>
-    <v-container fluid class="imgBGblack">
-        <v-container>
+    <v-container fluid class="pa-0 imgBGblack">
+        <v-container class="childContainer">
             <carousel 
                 ref="test"
                 class="slider"
@@ -71,4 +71,11 @@ export default {
  .imgBGblack{
      background-color: black;
  }
+@media only screen and (min-width: 1264px) 
+  and ( max-width: 2000px){
+  .slider{
+
+      padding: 13px 0;
+  }
+}
 </style>
