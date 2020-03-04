@@ -12,7 +12,7 @@
                 <v-img
                     class="white--text img align-end"
                     height="100%"
-                    :src="require(`../../assets/images/${image.name}`)"
+                    :src="require(`../../../assets/images/${image.name}`)"
                 >
                   <div class="fill-height pl-4 body-1">{{image.txt}}</div>                    
                 </v-img>
@@ -43,7 +43,7 @@
                 <v-img
                     class="white--text img align-end"
                     height="100%"
-                    :src="require(`../../assets/images/${image.name}`)"
+                    :src="require(`../../../assets/images/${image.name}`)"
                 >
                   <div class="fill-height pl-4 body-1">{{image.txt}}</div>                    
                 </v-img>

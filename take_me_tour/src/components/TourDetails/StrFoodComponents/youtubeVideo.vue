@@ -10,7 +10,7 @@
         </v-col>
       </v-row>
         <v-col cols="12">
-            
+            <customPlauer source="https://www.youtube.com/embed/FjeUQ87laNs"/>
         </v-col> <!--Youtube video sec-->
       <v-row>   
 
@@ -19,8 +19,12 @@
 </template>
 
 <script>
-export default {
+import customPlauer from './video'
 
+export default {
+  components:{
+    customPlauer
+  }
 }
 </script>
 

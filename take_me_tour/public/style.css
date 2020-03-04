@@ -2,3 +2,13 @@
 .v-application{
     font-family: 'Montserrat','Prompt','Open Sans', sans-serif!important;
 }
+p{
+    vertical-align: middle;
+    white-space: pre-wrap;
+    font-family: 'Montserrat', 'Prompt', Tahoma, sans-serif !important;
+    font-weight: 300 !important;
+    color: rgb(66, 94, 108) !important;
+    line-height: 1.57 !important;
+    font-size: 15px !important;
+    margin: 0px;
+}

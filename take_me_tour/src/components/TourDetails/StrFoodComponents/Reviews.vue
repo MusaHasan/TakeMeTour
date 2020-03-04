@@ -130,7 +130,7 @@
                                         <v-list-item-avatar color="grey darken-3">
                                             <v-img
                                                 class="elevation-6"
-                                                src="../../assets/Tourimage/asset 64.jpeg"
+                                                src="../../../assets/Tourimage/asset 64.jpeg"
                                             ></v-img>
                                         </v-list-item-avatar>
                                     </v-col>
@@ -169,7 +169,7 @@
                                     <v-img
                                         class="white--text img align-end"
                                         height="100%"
-                                        :src="require(`../../assets/images/${image.name}`)"
+                                        :src="require(`../../../assets/images/${image.name}`)"
                                     >                    
                                     </v-img>
                                 </v-card>
@@ -198,7 +198,7 @@
                                         <v-list-item-avatar color="grey darken-3">
                                             <v-img
                                                 class="elevation-6"
-                                                src="../../assets/Tourimage/asset 64.jpeg"
+                                                src="../../../assets/Tourimage/asset 64.jpeg"
                                             ></v-img>
                                         </v-list-item-avatar>
                                     </v-col>
@@ -219,6 +219,27 @@
                     </v-col><!--user image & name-->
                 </v-row> <!--Review Title reating F-iconImg-->
                 <hr>
+                <v-row>
+                    <v-col justify="center" md="8" lg="8" xl="8" cols="12">
+                        <v-row>
+                            <v-col cols="2"> 
+                                <v-list-item-avatar color="grey darken-3">
+                                    <v-img
+                                        class="elevation-6"
+                                        src="../../../assets/Tourimage/asset 64.jpeg"
+                                    ></v-img>
+                                </v-list-item-avatar>
+                            </v-col><!-- User Avatar <loop 6times>-->
+                        </v-row>
+                        <v-row>
+                            <p>+ 7 more travelers have enjoyed</p>
+                            <p>the local experience with TakeMeTour Local Expert</p>
+                        </v-row>
+                        <v-row>
+                            <v-btn class="ma-2 depressed white--text" color="indigo">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
+                        </v-row>
+                    </v-col>
+                </v-row>
           </v-col>
           <v-col md="6" lg="6" xl="6" class="hidden-sm-and-down"></v-col>
       </v-row>
