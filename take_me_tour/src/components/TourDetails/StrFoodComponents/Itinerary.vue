@@ -1,6 +1,6 @@
 <template>
   <v-container>
-      <v-row>
+      <v-row class="mx-md-0 mx-lg-0 mx-xl-0 mx-2">
           <h3 class="mb-3">Itinerary</h3>
           <v-col cols="12" class="orengeLine1"><span class="location"><v-icon color="orange darken-3">mdi-map-marker</v-icon></span></v-col>
           <v-col cols="12" class="py-0 textOrng"><span class="dot">.</span>18:30</v-col>

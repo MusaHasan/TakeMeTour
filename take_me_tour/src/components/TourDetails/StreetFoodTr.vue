@@ -2,9 +2,9 @@
   <v-container fluid class="pa-0">
       <v-container class="childContainer">
         <v-row>
-            <v-col md="8" lg="8" xl="8" cols="12">
-                <messenger/>
-                <youtubeSec/>
+            <v-col class="pa-md-4 pa-lg-4 pa-xl-4 pa-1" md="8" lg="8" xl="8" cols="12">
+                 <messenger/>
+                 <youtubeSec/>
                 <itinerary/>
             </v-col><!--Mother Col 1-->
             <v-col cols="4" class="hidden-sm-and-down">

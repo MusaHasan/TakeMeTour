@@ -78,4 +78,10 @@ export default {
       padding: 13px 0;
   }
 }
+@media only screen and (min-device-width : 320px)
+        and (max-device-width : 767px) {
+        .slider {
+        margin: 3px 0;
+    }
+}
 </style>
