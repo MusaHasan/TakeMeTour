@@ -5,7 +5,10 @@
             <v-col class="pa-md-4 pa-lg-4 pa-xl-4 pa-1" md="8" lg="8" xl="8" cols="12">
                  <messenger/>
                  <youtubeSec/>
-                <itinerary/>
+                <itinerary/><!--done-->
+                <explore/>
+                <PriceMeetingPoint/>
+                <reviews/>
             </v-col><!--Mother Col 1-->
             <v-col cols="4" class="hidden-sm-and-down">
                 <v-banner class="pr-4" style="border: 1px solid rgb(226, 236, 240); border-radius: 6px; top:60px!important;" width="100%" sticky>
@@ -95,17 +98,17 @@ import moment from 'moment'
 import messenger from './StrFoodComponents/Messenger'
 import youtubeSec from './StrFoodComponents/youtubeVideo'
 import itinerary from './StrFoodComponents/Itinerary'
-// import explore from './StrFoodComponents/Explore'
-// import PriceMeetingPoint from './StrFoodComponents/Price-to-MeetingPoint'
-// import reviews from './StrFoodComponents/Reviews'
+import explore from './StrFoodComponents/Explore'
+import PriceMeetingPoint from './StrFoodComponents/Price-to-MeetingPoint'
+import reviews from './StrFoodComponents/Reviews'
 export default {
     components:{
         messenger,
         youtubeSec,
         itinerary,
-        // explore,
-        // PriceMeetingPoint,
-        // reviews
+        explore,
+        PriceMeetingPoint,
+        reviews
 
     },
     data: () => ({

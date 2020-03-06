@@ -1,5 +1,5 @@
 <template>
-  <v-containe>
+  <v-container>
       <v-row>
           <v-col cols="12">
               <h3>Price Conditions</h3>
@@ -15,32 +15,33 @@
           </v-col><!--Why This Trip? How Local Is It? What Makes It Unique? < loop >-->
           <v-col cols="12">
               <v-row>
-                  <v-col md="6" lg="6" xl="6" cols="12">
+                  <v-col md="5" lg="5" xl="5" cols="12">
                       <h3>Meeting Points</h3>
                       <h5><v-icon>mdi-alpha-m-box</v-icon> MRT Stations</h5>
                       <p>- Hua Lamphong</p>
                       <p>- Wat Mangkon</p>
                   </v-col>
-                  <v-col md="6" lg="6" xl="6" cols="12">
+                  <v-col md="7" lg="7" xl="7" cols="12">
                       <v-card
-                            class="ma-1 PopDesCrd"
-                            height="216"
-                            width="216"
+                            class="mx-1 subheading "
+                            elevation= 0
+                            width="100%"
                             :ripple="false"
                         >
                             <v-img
-                                class="white--text img align-end"
-                                height="100%"
+                                class="white--text mapPic img align-end"
+                                width="425"
+                                height="342"
+                                aspect-ratio="2"
                                 src="../../../assets/Tourimage/asset 26.png"
-                            >
-                            <div class="fill-height pl-4 body-1">{{image.txt}}</div>                    
+                            >                    
                             </v-img>
                         </v-card>
                   </v-col>
               </v-row>
           </v-col>
       </v-row>
-  </v-containe>
+  </v-container>
 </template>
 
 <script>
@@ -50,5 +51,8 @@ export default {
 </script>
 
 <style>
+.mapPic .v-image__image {
+    background-size: inherit!important; 
+}
 
 </style>

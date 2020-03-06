@@ -1,6 +1,8 @@
 <template>
   <v-container>
+    <h3>Explore This Trip</h3>
       <v-row class="hidden-sm-and-down">
+        
           <v-col cols="3" v-for="(image,i) in images"
               :key="i" >
               <v-card
@@ -18,7 +20,9 @@
                 </v-img>
               </v-card>
           </v-col>
+          
       </v-row >
+      <hr>
       <v-row class="hidden-lg-and-up">
           <h2 class="TitelTxt">Popular Destinations</h2>
         <v-sheet
