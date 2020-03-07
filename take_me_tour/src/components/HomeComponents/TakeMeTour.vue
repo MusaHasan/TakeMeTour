@@ -60,13 +60,22 @@ export default {
     .headtxt{
         width: 34%;
     }
+    .bodytxt{
+        color: white!important;
+    }
      @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
         .imagesTMT{
             margin-top: -17px;
             padding-bottom: 0;
+             
         }
+        .imagesTMT .v-image{
+            width: 60%!important;
+            margin-left: 155px;
+        }
+
         .headtxt{
             width: 100%;
             text-align: center

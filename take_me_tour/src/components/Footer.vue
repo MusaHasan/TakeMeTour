@@ -2,110 +2,110 @@
 <v-container fluid class="pa-0 FootbgColor">
   <v-container class="childContainer">
       <v-row>
-          <v-col md="3" lg="3" xl="3" cols="12" class="px-12">
-              <h4>Currency</h4>
+          <v-col md="3" lg="3" xl="3" cols="12" class="BtnDv">
+              <h3 class="BtnTtl" >Currency</h3>
               <v-row>
                     <div class="text-center">
                         <v-menu offset-y>
-                        <template v-slot:activator="{ on }">
-                            <v-hover v-slot:default="{ hover }">
-                                <v-btn
-                                class="active socialIc mb-6"
-                                height="48"
-                                width="206"
-                                :ripple="false"
-                                light
-                                v-on="on"
-                                @click="isActive1=!isActive1"
-                                :elevation="hover ? 12 : 2"
-                                :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
+                            <template v-slot:activator="{ on }">
+                                <v-hover v-slot:default="{ hover }">
+                                    <v-btn
+                                    class="footerBtn active mb-6"
+                                    height="48"
+                                    width="206"
+                                    :ripple="false"
+                                    light
+                                    v-on="on"
+                                    @click="isActive1=!isActive1"
+                                    :elevation="hover ? 12 : 0"
+                                    :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
+                                    >
+                                        <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                                    </v-btn>
+                                </v-hover>
+                            </template>
+                            <v-list>
+                                <v-list-item
+                                v-for="(item, index) in items"
+                                :key="index"
                                 >
-                                    <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
-                                </v-btn>
-                            </v-hover>
-                        </template>
-                        <v-list>
-                            <v-list-item
-                            v-for="(item, index) in items"
-                            :key="index"
-                            >
-                            <v-list-item-title>{{ item.title }}</v-list-item-title>
-                            </v-list-item>
-                        </v-list>
+                                <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                </v-list-item>
+                            </v-list>
                         </v-menu>
                     </div>
               </v-row>
-              <h4>Country</h4>
+              <h3 class="BtnTtl">Country</h3>
               <v-row>
                     <div class="text-center">
                         <v-menu offset-y>
-                        <template v-slot:activator="{ on }">
-                            <v-hover v-slot:default="{ hover }">
-                                <v-btn
-                                class="socialIc mb-6"
-                                height="48"
-                                width="206"
-                                :ripple="false"
-                                @click="isActive2=!isActive2"
-                                v-on="on"
-                                :elevation="hover ? 12 : 2"
-                                :class="{ 'on-hover': hover, activeBtn2 : isActive2 }"
+                            <template v-slot:activator="{ on }">
+                                <v-hover v-slot:default="{ hover }">
+                                    <v-btn
+                                    class="footerBtn mb-6"
+                                    height="48"
+                                    width="206"
+                                    :ripple="false"
+                                    @click="isActive2=!isActive2"
+                                    v-on="on"
+                                    :elevation="hover ? 12 : 0"
+                                    :class="{ 'on-hover': hover, activeBtn2 : isActive2 }"
+                                    >
+                                        <span class="mr-12 ">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                                    </v-btn>
+                                </v-hover>
+                            </template>
+                            <v-list>
+                                <v-list-item
+                                v-for="(item, index) in items"
+                                :key="index"
                                 >
-                                    <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
-                                </v-btn>
-                            </v-hover>
-                        </template>
-                        <v-list>
-                            <v-list-item
-                            v-for="(item, index) in items"
-                            :key="index"
-                            >
-                            <v-list-item-title>{{ item.title }}</v-list-item-title>
-                            </v-list-item>
-                        </v-list>
+                                <v-list-item-title>{{ item.title }}</v-list-item-title>
+                                </v-list-item>
+                            </v-list>
                         </v-menu>
                     </div>
               </v-row>
-              <h4>Follow us on</h4>
+              <h3 class="BtnTtl">Follow us on</h3>
               <v-row>
                 <v-icon class="socialIc pa-1" v-for="(icon,i) in icons" :key="i">{{icon.name}}</v-icon>  
               </v-row>
           </v-col>
 
           <v-col md="3" lg="3" xl="3" cols="12">
-              <h4>About TakeMeTour</h4>
+              <h3 class="listTtl">About TakeMeTour</h3>
               <v-row>
                     <v-list-item>
                         <v-list-item-content>
-                            <v-list-item-subtitle class="socialIc" v-for="(item,i) in AbTMT" :key="i" >{{item.txt}}</v-list-item-subtitle>
+                            <v-list-item-subtitle class="socialIc mb-1" v-for="(item,i) in AbTMT" :key="i" >{{item.txt}}</v-list-item-subtitle>
                         </v-list-item-content>
                     </v-list-item>
               </v-row>
-              <h4>Our Projects</h4>
+              <h3 class="listTtl">Our Projects</h3>
               <v-row>
                   <v-list-item>
                     <v-list-item-content>
-                        <v-list-item-subtitle class="socialIc" v-for="(item,i) in OuProj" :key="i" >{{item.txt}}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="socialIc mb-1" v-for="(item,i) in OuProj" :key="i" >{{item.txt}}</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item> 
               </v-row>
           </v-col>
           <v-col md="3" lg="3" xl="3" cols="12">
-              <h4>Top Destinations</h4>
+              <h3 class="listTtl">Top Destinations</h3>
               <v-row>
                   <v-list-item>
                     <v-list-item-content >
-                        <v-list-item-subtitle class="socialIc" v-for="(item,i) in TopDes" :key="i" >{{item.txt}}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="socialIc mb-1" v-for="(item,i) in TopDes" :key="i" >{{item.txt}}</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item> 
               </v-row>
           </v-col>
           <v-col md="3" lg="3" xl="3" cols="12">
-              <h4>Top Activities</h4>
+              <h3 class="listTtl">Top Activities</h3>
               <v-row>
                   <v-list-item>
                     <v-list-item-content >
-                        <v-list-item-subtitle class="socialIc" v-for="(item,i) in TopAct" :key="i" >{{item.txt}}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="socialIc mb-1" v-for="(item,i) in TopAct" :key="i" >{{item.txt}}</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item> 
               </v-row>
@@ -196,6 +196,10 @@ export default {
     .FootbgColor{
         background-color: #F0F5F7;
     }
+    .BtnDv{padding: 4px 48px;}
+    .footerBtn {
+        background-color: white!important;
+    }
     .v-input__control{
         height: 34px!important;
     }
@@ -205,6 +209,20 @@ export default {
     .activeBtn1,.activeBtn2{
          border: 1px solid #ff7b00!important;
          background-color: white!important;
+    }
+    .BtnTtl{
+        margin: 8px -11px;
+    }
+    .listTtl{
+         margin: 6px 2px;
+    }
+    @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 767px){
+        .BtnDv{
+            padding: 4px 25px;
+        }
+        
     }
     
 </style>

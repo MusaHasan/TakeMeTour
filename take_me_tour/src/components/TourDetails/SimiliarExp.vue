@@ -7,7 +7,7 @@
             <v-col md="3" lg="3" xl="3" cols="12" class="ml-2 mb-2" 
                 v-for="(image,i) in images" :key="i">
                 <v-card
-                    class="mx-auto white TurAvCrd"
+                    class="mx-auto white simiExpCrd"
                     max-width="min-content"
                     max-height="355"
                 >
@@ -82,7 +82,7 @@ export default {
   @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
-      .TurAvCrd{
+      .simiExpCrd{
         width: 273px!important;
         height: 209px!important;
       }

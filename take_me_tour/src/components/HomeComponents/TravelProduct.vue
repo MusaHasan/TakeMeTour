@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 BodyBGcolot">
   <v-container class="childContainer">
       <v-row >
-        <h2 class="TitelTxt">Travel Products</h2>
+        <h2 class="TitelTxt mb-4">Travel Products</h2>
         <v-sheet
           class="mx-auto transparent"
           elevation="0"

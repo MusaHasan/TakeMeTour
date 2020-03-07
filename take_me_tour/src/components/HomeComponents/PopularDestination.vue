@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 BodyBGcolot">
   <v-container class="childContainer">
       <v-row >
-          <h2 class="TitelTxt">Popular Destinations</h2>
+          <h2 class="TitelTxt mb-4">Popular Destinations</h2>
         <v-sheet
           class="mx-auto transparent"
           elevation="0"
@@ -26,8 +26,9 @@
                     class="white--text img align-end"
                     height="100%"
                     :src="require(`../../assets/images/${image.name}`)"
+                    gradient="to bottom, rgba(241, 241, 241, 0.01), rgba(0, 0, 0, 0.9)"
                 >
-                  <div class="fill-height pl-4 body-1">{{image.txt}}</div>                    
+                  <div class="fill-height mb-4 pl-4 body-1">{{image.txt}}</div>                    
                 </v-img>
               </v-card>
               

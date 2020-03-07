@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 BodyBGcolot">
   <v-container class="childContainer">
       <v-row >
-          <h2 class="TitelTxt">Traveler's Reviews</h2>
+          <h2 class="TitelTxt mb-4">Traveler's Reviews</h2>
         <v-sheet
           class="mx-auto mb-8 transparent"
           elevation="0"
@@ -14,7 +14,7 @@
             <v-slide-item
               v-for="(image,i) in images"
               :key="i"
-              class="ml-2"
+              class="ml-2 reviewsCrd"
             >
               <v-card
                 class="ma-1 TrvRevCrd"
@@ -33,17 +33,17 @@
                             ></v-img>
                         </v-list-item-avatar>
                     </v-col>
-                    <v-col cols="6">
+                    <v-col md="6" lg="6" xl="6" cols="4">
                         <v-list-item-content>
                             <v-list-item-title>{{image.name}}</v-list-item-title>
-                             <v-list-item-title> 
+                             <v-list-item-subtitle> 
                                     <v-img
                                         class="white--text d-inline-block"
                                         height="20"
                                         width="30"
                                         :src="require(`../../assets/images/${image.flag}`)"
                                     >
-                                    </v-img> {{image.country}}</v-list-item-title>
+                                    </v-img> <span class="flagTxt">{{image.country}}</span></v-list-item-subtitle>
                         </v-list-item-content>
                     </v-col>
                     <v-col cols="2">
@@ -60,8 +60,7 @@
                 </v-row>
                 <v-row>
                     <v-col>
-                        <p class="cardTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                         Consequatur maxime eligendi iure ipsa cum! Reiciendis quam molestiae voluptas.</p>
+                        <p class="cardTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </v-col>
                 </v-row>
                
@@ -114,13 +113,18 @@ export default {
 } 
 .TrvRevCrd{
   background-color: #244b521a!important;
+  border-radius: 14px!important;
 }
 @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
     .TrvRevCrd{
-      width: 225px!important;
-      height: 139px!important;
+      width: 290px!important;
+      height: 170px!important;
+    }
+    .flagTxt{
+      font-size: 10px;
+      font-weight: 400;
     }
     
   }

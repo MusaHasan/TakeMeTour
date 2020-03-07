@@ -18,9 +18,9 @@
             <v-list-item> 
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-list-item-title class="grey--text"  v-on="on" >Where to go?
+                  <v-list-item-subtitle class="grey--text"  v-on="on" >Where to go?
                     <v-icon class="grey--text">mdi-chevron-down</v-icon>
-                  </v-list-item-title>
+                  </v-list-item-subtitle>
                 </template>
                 <v-list>
                   <v-list-item
@@ -36,9 +36,9 @@
             <v-list-item> 
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-list-item-title class="grey--text"  v-on="on" >Travel Products
+                  <v-list-item-subtitle class="grey--text"  v-on="on" >Travel Products
                     <v-icon class="grey--text">mdi-chevron-down</v-icon>
-                  </v-list-item-title>
+                  </v-list-item-subtitle>
                 </template>
                 <v-list>
                   <v-list-item

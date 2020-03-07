@@ -41,6 +41,7 @@
             <v-overflow-btn
             class="white Search-btn"
             color="orange darken-3"
+            prepend-icon="mdi-map-marker-outline"
             :items="dropdown_font"
             label="Overflow Btn"
             target="#dropdown-example"
@@ -223,17 +224,26 @@
         margin-top: 0!important;
     }
     .Search-btn{
-        box-shadow: rgba(36, 75, 82, 0.1) 0px 3px 5px 0px!important;
+        box-shadow: -1px 0px 9px 1px rgba(148,148,148,1)!important;
         height: 48px!important;
         border: 1px solid rgb(238, 243, 245)!important;
         border-radius: 4px!important;
         transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;  
+    }
+    .v-overflow-btn .v-input__slot, .v-text-field.v-text-field--solo{
+        box-shadow: unset!important;
+        border-style: none!important;
+    }
+    .Search-btn .mdi:before{
+        padding-left: 25px;
+        color: #EF6C00;
     }
     .searchCol{
         background-color: #F8FBFB;
         border-radius: 10px 0 0 0;
         margin-left: 36px;
         margin-right: 0;
+        
     } 
     .buttonCol{
         background-color: #F8FBFB;
@@ -249,8 +259,9 @@
         .searchSec{
         position: relative;
         top: -34px;
-        margin-left: 30px !important;
+        margin-left: 0 !important;
         width: auto;
+        margin-right:-13% !important;
         }
         .searchCol{
         background-color: #f8fbfb00;
@@ -261,11 +272,12 @@
         .buttonCol{
             background-color: #f8fbfb00;
             border-radius: 0;
-            margin: 0px 18px;
+            margin: 0px ;
         } 
         .searchBtn{
             padding: 0px 3px!important;
             font-size: 12px!important;
+            margin: -3px;
         } 
         
     }
