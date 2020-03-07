@@ -1,30 +1,47 @@
 <template>
 <v-container fluid class="pa-0 BodyBGcolot">
     <v-container class="childContainer">
+      <h3>Tour Available Tomorrow</h3>
       <v-row >
-            <h3>Tour Available Tomorrow</h3>
-            
-            <v-col md="3" lg="3" xl="3" cols="12" class="ml-2 mb-2" 
+            <v-col md="3" lg="3" xl="3" cols="12" class="mb-2" 
                 v-for="(image,i) in images" :key="i">
                 <v-card
-                    class="mx-auto white simiExpCrd"
+                    class="white SimilarCrd"
                     max-width="min-content"
-                    max-height="355"
+                    max-height="370"
                 >
                     <v-img
                     class="white--text align-end"
                     height="206px"
-                    width="270px"
+                    width="343px"
                     :src="require(`../../assets/images/${image.name}`)"
                     >
+                    <v-icon class="SimilheartIc">mdi-heart-outline</v-icon>
                     </v-img>
 
                     <v-card-subtitle class="tagTxt">Number 10</v-card-subtitle>
 
                     <v-card-text class="text--primary">
-                    <div>Whitehaven Beach</div>
+                    <div><h4>5 famous Temples & Street Food at Wang Lang... </h4></div>
 
-                    <div>Whitsunday Island, Whitsunday Islands</div>
+                    <div>Whitsunday Island, Whitsunday..</div>
+                    <v-row>
+                      <v-col cols="5">
+                        <div class="d-flex">
+                            <v-rating
+                            color="yellow darken-3"
+                            background-color="yellow darken-3"
+                            empty-icon="$ratingFull"
+                            small
+                          ></v-rating>(114)
+                        </div>
+                        
+                        <p class="timeTxt"><v-icon>mdi-clock-outline</v-icon> 08:00- 19:00</p>
+                      </v-col>
+                      <v-col cols="7">
+                        <p class="caption mt-4" > <span class=" green--text">USD 88.85</span> / <span class="overline">person</span> </p>
+                      </v-col>
+                    </v-row>
                     </v-card-text>
 
                 </v-card>
@@ -64,7 +81,7 @@ export default {
     min-width: 27px!important;
     background-color: #fffafa00;
   }
-  .TurAvCrd{
+  .SimilarCrd{
     border-radius: 6px!important;
     box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 5px 0px!important;
     cursor: pointer;
@@ -77,14 +94,18 @@ export default {
     width: fit-content!important;
     padding: 8px 13px;
     border-radius: 0 50px 50px 0;
-
+  }
+  .SimilheartIc{
+    top: -171px;
+    right: -310px;
+    color: white!important;
   }
   @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
-      .simiExpCrd{
-        width: 273px!important;
-        height: 209px!important;
+      .SimilarCrd{
+        width: 343px!important;
+        height: 370px!important;
       }
     }
 
