@@ -28,7 +28,7 @@
       <v-row class="bgLiteBlue"> <!--Massage section-->
           <v-col class="py-0" cols="12">
               <v-row>
-                  <v-col class="px-md-12 px-lg-12 px-3 py-0" md="3" lg="3" xl="3" cols="2">
+                  <v-col class="imgAvater" md="2" lg="2" xl="2" cols="2">
                       <v-row>
                           <v-col v-for="(user,i) in users" :key="i" class="py-0 px-0" cols="4">
                               <v-list-item-avatar min-width="18"
@@ -42,13 +42,13 @@
                           </v-col> <!--users-6-images-->
                       </v-row>
                   </v-col>
-                  <v-col class="py-0 pr-0 mt-2" cols="7">
+                  <v-col class="py-0 pr-0 mt-5 msTxt" md="8" lg="8" xl="8" cols="7">
                       <p class="my-0">Local Experience by</p>
                       <p style="color:#16c464!important;">Selected Local Experts</p>
                   </v-col> <!--middel Text-->
                   
                   <v-col class="py-0 px-0" md="2" lg="2" xl="2" cols="2">
-                    <p class="blueTxt my-5"><v-icon color="rgb(28, 182, 230)">mdi-comment-text-multiple-outline</v-icon> Massage</p>
+                    <p class="blueTxt my-5"><v-icon class="ml-4 ml-md-0 ml-lg-0 ml-xl-0" color="rgb(28, 182, 230)">mdi-comment-text-multiple-outline</v-icon> Massage</p>
                   </v-col><!--Massage Text & Icon-->
               </v-row>
           </v-col>
@@ -160,6 +160,22 @@ data:()=>({
 .bgLiteBlue{
  background-color: #f0f5f7;
  border-radius:4px;
- 
+}
+.imgAvater{
+     padding: 0 44px !important;
+}
+.msTxt{
+    margin-left: -17px;
+}
+@media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 767px) {
+    .imgAvater{
+        padding: 0 12px!important;
+        margin: 10px 12px
+    }
+    .msTxt{
+        margin-left: -16px;
+}
 }
 </style>

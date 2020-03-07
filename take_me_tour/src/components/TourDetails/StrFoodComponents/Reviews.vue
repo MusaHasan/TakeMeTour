@@ -1,96 +1,110 @@
 <template>
   <v-container>
       
-        <v-row>
-            <h3>Reviews (50)</h3> 
-            <v-rating
-                color="yellow darken-3"
-                background-color="yellow darken-3"
-                empty-icon="$ratingFull"
-                class="py-3"
-                ></v-rating> 4.7
-        </v-row>
-        <v-row>
-            <p>Friendliness</p> 
-            <v-rating
-                color="yellow darken-3"
-                background-color="yellow darken-3"
-                empty-icon="$ratingFull"
-                class="py-3"
-                ></v-rating> 4.8
-        </v-row> <!--Review text <loop>-->
+        <v-row >
+            <v-col md="7" lg="7" xl="7" cols="12" >
+                <div class="d-flex">
+                    <h3 class="mt-3">Reviews (50)</h3> 
+                    <v-spacer/>
+                    <v-rating
+                        color="yellow darken-3"
+                        background-color="yellow darken-3"
+                        empty-icon="$ratingFull"
+                        class="py-3 pr-2"
+                    ></v-rating> <span class="mt-3">4.7</span> 
+                </div>
 
-        <v-row>
-            <v-col>
-                <div class="text-center">
-                    <v-menu offset-y>
-                    <template v-slot:activator="{ on }">
-                        <v-hover v-slot:default="{ hover }">
-                            <v-btn
-                            class="active socialIc mb-6"
-                            height="48"
-                            width="206"
-                            :ripple="false"
-                            light
-                            v-on="on"
-                            @click="isActive1=!isActive1"
-                            :elevation="hover ? 12 : 2"
-                            :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
+                <v-list class="mx-0 mt-4">
+                    <v-list-item class="px-0" style="margin: -27px 0" v-for="(item,i) in items" :key="i" >
+                        <v-list-item-content class="py-0 reatingTxt">
+                        <v-list-item-subtitle style="padding-right: 113px" > <p>Friendliness</p>  </v-list-item-subtitle>
+                        </v-list-item-content>
+
+                        <v-list-item-icon class="pl-12 my-0 ml-12"> 
+                            <v-rating
+                                color="yellow darken-3"
+                                background-color="yellow darken-3"
+                                empty-icon="$ratingFull"
+                                class="mt-1 pr-2 mx-2 reating"
+                            ></v-rating> 
+                        </v-list-item-icon>
+                        <v-list-item-content class="pa-0">
+                        <v-list-item-subtitle> <p>4.8</p>  </v-list-item-subtitle>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list>
+
+                <div class="d-lg-flex d-md-flex d-xl-flex d-block"> <!--Review Buttons-->
+                    <v-menu  offset-y>
+                        <template v-slot:activator="{ on }">
+                            <v-hover v-slot:default="{ hover }">
+                                <v-btn
+                                class="active socialIc mr-1 mb-1 mt-10"
+                                height="34"
+                                width="202"
+                                :ripple="false"
+                                light
+                                v-on="on"
+                                @click="isActive1=!isActive1"
+                                outlined
+                                :elevation="hover ? 12 : 2"
+                                :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
+                                >
+                                   <v-img src="../../../assets/Tourimage/asset 51.png"></v-img> <span class="mr-8">All Countries</span><v-icon color="grey darken-4">mdi-menu-down</v-icon>
+                                </v-btn>
+                            </v-hover>
+                        </template>
+                        <v-list>
+                            <v-list-item
+                            v-for="(item, index) in items"
+                            :key="index"
                             >
-                                <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
-                            </v-btn>
-                        </v-hover>
-                    </template>
-                    <v-list>
-                        <v-list-item
-                        v-for="(item, index) in items"
-                        :key="index"
-                        >
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                    </v-menu>
+                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                    </v-menu> <!--Btn1-->
+
+                    <v-menu  offset-y>
+                        <template v-slot:activator="{ on }">
+                            <v-hover v-slot:default="{ hover }">
+                                <v-btn
+                                class="active socialIc ml-1 mb-1 mt-10"
+                                height="34"
+                                width="202"
+                                :ripple="false"
+                                light
+                                v-on="on"
+                                @click="isActive1=!isActive1"
+                                outlined
+                                :elevation="hover ? 12 : 2"
+                                :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
+                                >
+                                    <span class="mr-12">Dropdown</span><v-icon color="grey darken-1">mdi-swap-vertical</v-icon>
+                                </v-btn>
+                            </v-hover>
+                        </template>
+                        <v-list>
+                            <v-list-item
+                            v-for="(item, index) in items"
+                            :key="index"
+                            >
+                            <v-list-item-title>{{ item.title }}</v-list-item-title>
+                            </v-list-item>
+                        </v-list>
+                    </v-menu> <!--Btn2-->
                 </div>
             </v-col>
-            <v-col>
-                <div class="text-center">
-                    <v-menu offset-y>
-                    <template v-slot:activator="{ on }">
-                        <v-hover v-slot:default="{ hover }">
-                            <v-btn
-                            class="active socialIc mb-6"
-                            height="48"
-                            width="206"
-                            :ripple="false"
-                            light
-                            v-on="on"
-                            @click="isActive1=!isActive1"
-                            :elevation="hover ? 12 : 2"
-                            :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
-                            >
-                                <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
-                            </v-btn>
-                        </v-hover>
-                    </template>
-                    <v-list>
-                        <v-list-item
-                        v-for="(item, index) in items"
-                        :key="index"
-                        >
-                        <v-list-item-title>{{ item.title }}</v-list-item-title>
-                        </v-list-item>
-                    </v-list>
-                    </v-menu>
-                </div>
-            </v-col>
-        </v-row> <!--Review Buttons-->
-        <v-row>
-            <v-col cols="2" v-for="(image,i) in images"
+            <v-col cols="5" class="hidden-sm-and-down"></v-col>
+            
+        </v-row> 
+
+        <v-row class="RvwImgRow1">
+            <v-col class="RvwImgCol1" cols="3" v-for="(image,i) in images"
                 :key="i">
                 <v-card
-                    class="ma-1 PopDesCrd"
-                    height="216"
-                    width="216"
+                    class="my-1 RvwImgCrd"
+                    height="128"
+                    width="128"
                     :ripple="false"
                 >
                     <v-img
@@ -100,103 +114,129 @@
                     >                    
                     </v-img>
                 </v-card>
-            </v-col> <!--Review images <loop 4 times>-->
-            <v-col cols="1">
+            </v-col> <!--Review images -->
+            <v-col cols="2" class="RvwImgCol1" >
                 <v-card
-                    class="ma-1 PopDesCrd"
-                    height="216"
-                    width="216"
+                    class="ma-1 RvwImgCrd"
+                    height="128"
+                    width="50"
                     :ripple="false"
                 >
-                    <v-icon class="white--text img align-end"
-                        height="100%"
-                    >mdi-dots-horizontal</v-icon>
+                    <v-icon class="threeDot">mdi-dots-horizontal</v-icon>
                 </v-card>
             </v-col><!--images icon card-->
         </v-row><!--Review Images-->
+        
         <v-row>
             <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
+                <div class="d-flex">
                     <v-rating
-                color="yellow darken-3"
-                background-color="yellow darken-3"
-                empty-icon="$ratingFull"
-                class="py-3"
-                ></v-rating> 4.8
-            </v-col>
-            <v-col md="4" lg="4" xl="4" cols="12">
-                    <v-row>
-                        <v-list-item class="grow">
-                            <v-col cols="2"> 
-                                <v-list-item-avatar color="grey darken-3">
-                                    <v-img
-                                        class="elevation-6"
-                                        src="../../../assets/Tourimage/asset 64.jpeg"
-                                    ></v-img>
-                                </v-list-item-avatar>
-                            </v-col>
-                            <v-col cols="6">
-                                <v-list-item-content>
-                                    <v-list-item-title>Hannah S.</v-list-item-title>
-                                    <v-list-item-title>
-                                        <p>February 19, 2020 </p> 
-                                    </v-list-item-title>
-                                </v-list-item-content>
-                            </v-col>
-                            <v-col cols="2">
-                            </v-col>
-                        
-                        </v-list-item>
-                        
-                    </v-row>
-            </v-col><!--user image & name-->
-        </v-row> <!--Review Title reating F-iconImg-->
-        <hr>
-        <v-row>
-            <v-col cols="12">
+                    color="yellow darken-3"
+                    background-color="yellow darken-3"
+                    empty-icon="$ratingFull"
+                    class=""
+                    ></v-rating> 4.8
+                </div>
                 <p>Eddie was very friendly, kind & knowledgeable of the Chinatown neighborhood. Being a native of 
                     Bangkok, he took me to some local favorite eateries that were very savory. It was great 
                     to have a local navigate me through this very exciting but busy area.
                         At the end we had a refreshing traditional Thai dessert :) It was an enjoyable experience.
                 </p>
-                <v-row>
-                    <v-col cols="2" v-for="(image,i) in images"
-                    :key="i">
+                <v-row class="RvwImgRow2">
+                    <v-col class="RvwImgCol2" cols="4">
                         <v-card
-                            class="ma-1 PopDesCrd"
-                            height="216"
-                            width="216"
+                            class="my-1 RvwImgCrd2"
                             :ripple="false"
                         >
                             <v-img
                                 class="white--text img align-end"
                                 height="100%"
-                                :src="require(`../../../assets/images/${image.name}`)"
+                                src="../../../assets/images/asset 42.jpeg"
                             >                    
                             </v-img>
                         </v-card>
-                    </v-col> <!--Review images <loop 3 time>-->
+                    </v-col> <!--Review images <loop 4 times>-->
+                    <v-col class="RvwImgCol2" cols="4">
+                        <v-card
+                            class="my-1 RvwImgCrd2"
+                            :ripple="false"
+                        >
+                            <v-img
+                                class="white--text img align-end"
+                                height="100%"
+                                src="../../../assets/images/asset 42.jpeg"
+                            >                    
+                            </v-img>
+                        </v-card>
+                    </v-col> <!--Review images <loop 4 times>-->
+                    <v-col class="RvwImgCol2" cols="4">
+                        <v-card
+                            class="my-1 RvwImgCrd2"
+                            :ripple="false"
+                        >
+                            <v-img
+                                class="white--text img align-end"
+                                height="100%"
+                                src="../../../assets/images/asset 42.jpeg"
+                            >                    
+                            </v-img>
+                        </v-card>
+                    </v-col> <!--Review images <loop 4 times>-->
                 </v-row><!--Review Images-->
                 <p>
                     Helpful? <v-icon style="border-right: 1px solid gray;">mdi-thumb-up-outline</v-icon> <v-icon>mdi-thumb-down-outline</v-icon>
                 </p>
             </v-col>
-        </v-row><!--Review text like dislike icon-->
+            
+            <v-col md="4" lg="4" xl="4" cols="12">
+                <v-row>
+                    <v-list-item class="grow">
+                        <v-col cols="3"> 
+                            <v-list-item-avatar color="grey darken-3">
+                                <v-img
+                                    class="elevation-6"
+                                    src="../../../assets/Tourimage/asset 64.jpeg"
+                                ></v-img>
+                            </v-list-item-avatar>
+                        </v-col>
+                        <v-col cols="9">
+                            <v-list-item-content>
+                                <v-list-item-title>Hannah S.</v-list-item-title>
+                                <v-list-item-title>
+                                    <p>February 19, 2020 </p> 
+                                </v-list-item-title>
+                            </v-list-item-content>
+                        </v-col>
+                    </v-list-item>
+                    
+                </v-row>
+            </v-col><!--user image & name-->
+        </v-row> <!--Review Title reating F-iconImg-->
+
         <hr>
+
         <v-row>
             <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
+                <div class="d-flex">
                     <v-rating
-                color="yellow darken-3"
-                background-color="yellow darken-3"
-                empty-icon="$ratingFull"
-                class="py-3"
-                ></v-rating> 4.8
+                    color="yellow darken-3"
+                    background-color="yellow darken-3"
+                    empty-icon="$ratingFull"
+                    class=""
+                    ></v-rating> 4.8
+                </div>
+                <p>Eddie was very friendly, kind & knowledgeable of the Chinatown neighborhood. Being a native of 
+                    Bangkok, he took me to some local favorite eateries that were very savory. It was great 
+                    to have a local navigate me through this very exciting but busy area.
+                        At the end we had a refreshing traditional Thai dessert :) It was an enjoyable experience.
+                </p>
             </v-col>
             <v-col md="4" lg="4" xl="4" cols="12">
                     <v-row>
                         <v-list-item class="grow">
-                            <v-col cols="2"> 
+                            <v-col cols="3"> 
                                 <v-list-item-avatar color="grey darken-3">
                                     <v-img
                                         class="elevation-6"
@@ -204,7 +244,7 @@
                                     ></v-img>
                                 </v-list-item-avatar>
                             </v-col>
-                            <v-col cols="6">
+                            <v-col cols="9">
                                 <v-list-item-content>
                                     <v-list-item-title>Hannah S.</v-list-item-title>
                                     <v-list-item-title>
@@ -212,19 +252,56 @@
                                     </v-list-item-title>
                                 </v-list-item-content>
                             </v-col>
-                            <v-col cols="2">
-                            </v-col>
-                        
-                        </v-list-item>
-                        
+                        </v-list-item> 
                     </v-row>
             </v-col><!--user image & name-->
         </v-row> <!--Review Title reating F-iconImg-->
+
         <hr>
+
         <v-row>
-            <v-col justify="center" md="8" lg="8" xl="8" cols="12">
-                <v-row>
-                    <v-col cols="2" v-for="(image,i) in images"
+            <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
+                <h3>Street Food Tour in Bangkok Chinatown</h3>
+                <div class="d-flex">
+                    <v-rating
+                    color="yellow darken-3"
+                    background-color="yellow darken-3"
+                    empty-icon="$ratingFull"
+                    class=""
+                    ></v-rating> 4.8
+                </div>
+            </v-col>
+            <v-col md="4" lg="4" xl="4" cols="12">
+                    <v-row>
+                        <v-list-item class="grow">
+                            <v-col cols="3"> 
+                                <v-list-item-avatar color="grey darken-3">
+                                    <v-img
+                                        class="elevation-6"
+                                        src="../../../assets/Tourimage/asset 64.jpeg"
+                                    ></v-img>
+                                </v-list-item-avatar>
+                            </v-col>
+                            <v-col cols="9">
+                                <v-list-item-content>
+                                    <v-list-item-title>Hannah S.</v-list-item-title>
+                                    <v-list-item-title>
+                                        <p>February 19, 2020 </p> 
+                                    </v-list-item-title>
+                                </v-list-item-content>
+                            </v-col>
+                        </v-list-item> 
+                    </v-row>
+            </v-col><!--user image & name-->
+        </v-row> <!--Review Title reating F-iconImg-->
+
+        <hr>
+        
+
+        <v-row justify="center">
+            <v-col md="8" lg="8" xl="8" cols="12">
+                <v-row justify="center">
+                    <v-col  cols="2" v-for="(image,i) in images"
                     :key="i"> 
                         <v-list-item-avatar color="grey darken-3">
                             <v-img
@@ -233,19 +310,12 @@
                             ></v-img>
                         </v-list-item-avatar>
                     </v-col><!-- User Avatar <loop 6times>-->
-                </v-row>
-                <v-row>
                     <p>+ 7 more travelers have enjoyed</p>
                     <p>the local experience with TakeMeTour Local Expert</p>
-                </v-row>
-                <v-row>
                     <v-btn class="ma-2 depressed white--text" color="indigo">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
                 </v-row>
             </v-col>
         </v-row>
-          <!-- </v-col>
-          <v-col md="6" lg="6" xl="6" class="hidden-sm-and-down"></v-col>
-      </v-row> -->
   </v-container>
 </template>
 
@@ -258,7 +328,6 @@ export default {
             { title: 'Click Me' },
             { title: 'Click Me' },
             { title: 'Click Me' },
-            { title: 'Click Me 2' },
         ],
         images:[
             {
@@ -280,12 +349,62 @@ export default {
 </script>
 
 <style>
+    .reating .v-icon{
+        font-size: 12px!important;
+    }
+    .miniReating{
+        margin: -10px 0;
+    }
+    .reatingTxt{
+        padding-right: 190px;
+    }
+    .RvwImgRow1{
+        padding-left: 27px;
+    }
+    .RvwImgCol1{
+        margin: 0 -24px;
+    }
+    .RvwImgRow2{
+        padding-left: 10px;
+    }
+    .threeDot{
+        padding: 12px;
+        margin: 48px 0;
+    }
+    .RvwImgCol2{
+        margin: 0 -16px;
+    }
+    .RvwImgCrd2{
+        height: 128px;
+        width: 128px;
+    }
     @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
-        .PopDesCrd{
-        width: 125px!important;
-        height: 125px!important;
+        .RvwImgCrd{
+        width: 60px!important;
+        height: 60px!important;
+        }
+        .reatingTxt {
+            padding-right: 120px;
+        }
+        .RvwImgRow1 {
+            padding-left: 8px;
+        }
+        .RvwImgCol1 {
+            margin: 0 -8px;
+        }
+
+        .RvwImgCrd2 {
+            height: 112px;
+            width: 112px;
+        }
+        .threeDot {
+            margin: 18px 0;
+            padding: 0 6px;
+        }
+        .RvwImgCol2 {
+            margin: 0 -4px;
         }
     }
 </style>

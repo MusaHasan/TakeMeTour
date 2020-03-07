@@ -21,9 +21,9 @@
                       <p>- Hua Lamphong</p>
                       <p>- Wat Mangkon</p>
                   </v-col>
-                  <v-col md="7" lg="7" xl="7" cols="12">
+                  <v-col md="7" class="pa-0 " lg="7" xl="7" cols="12">
                       <v-card
-                            class="mx-1 subheading "
+                            class="subheading "
                             elevation= 0
                             width="100%"
                             :ripple="false"
@@ -54,5 +54,12 @@ export default {
 .mapPic .v-image__image {
     background-size: inherit!important; 
 }
+@media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 767px) {
+    .mapPic .v-image__image {
+            background-size: contain!important;
+        }
 
+    }
 </style>

@@ -3,28 +3,30 @@
     <h3>Explore This Trip</h3>
       <v-row class="hidden-sm-and-down">
         
-          <v-col cols="3" v-for="(image,i) in images"
+          <v-col class="px-0 Ex-images " cols="3" v-for="(image,i) in images"
               :key="i" >
               <v-card
                 class="ma-1 PopDesCrd"
-                height="216"
-                width="216"
-                :ripple="false"
+                style="border-redius:16px!important"
+                height="225"
+                width="180"
+                :ripple="false" 
               >
                 <v-img
                     class="white--text img align-end"
-                    height="100%"
+                    height="225"
+                    width="180"
                     :src="require(`../../../assets/images/${image.name}`)"
+                    gradient="to bottom , rgba(255, 250, 250, 0.01),rgba(255, 250, 250, 0.01), rgba(191, 195, 217, 0.2), rgba(191, 195, 217, 0.2), rgba(0, 0, 0, 0.99)"
                 >
-                  <div class="fill-height pl-4 body-1">{{image.txt}}</div>                    
+                  <div class="fill-height text-center bottom-gradient">{{image.txt}}</div>                    
                 </v-img>
               </v-card>
           </v-col>
-          
+          <hr>
       </v-row >
-      <hr>
-      <v-row class="hidden-lg-and-up">
-          <h2 class="TitelTxt">Popular Destinations</h2>
+      
+      <v-row class="hidden-md-and-up">
         <v-sheet
           class="mx-auto transparent"
           elevation="0"
@@ -39,9 +41,7 @@
               class="ml-2 transparent"
             >
               <v-card
-                class="ma-1 PopDesCrd"
-                height="216"
-                width="216"
+                class="ma-1 ExplCrd"
                 :ripple="false"
               >
                 <v-img
@@ -49,7 +49,7 @@
                     height="100%"
                     :src="require(`../../../assets/images/${image.name}`)"
                 >
-                  <div class="fill-height pl-4 body-1">{{image.txt}}</div>                    
+                  <div class="fill-height text-center pl-4 body-1">{{image.txt}}</div>                    
                 </v-img>
               </v-card>
               
@@ -94,12 +94,20 @@ export default {
 </script>
 
 <style>
+  .Ex-images .v-card{
+    border-radius: 15px!important;
+  }
+  .ExplCrd{
+    height: 216px !important;
+    width: 216px !important;
+  }
     @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
-        .PopDesCrd{
-        width: 125px!important;
-        height: 125px!important;
+        .ExplCrd{
+        width: 240px!important;
+        height: 300px!important;
+        border-radius: 15px!important;
         }
     }
 </style>
