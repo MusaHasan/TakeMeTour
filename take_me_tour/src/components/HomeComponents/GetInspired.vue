@@ -28,6 +28,7 @@
                 width="218"
                 :ripple="false"
                 @click="toggle"
+                router to="/about"
               >
                 <v-img
                   class="white--text img align-end"
@@ -106,6 +107,7 @@ export default {
     .imgCrd{
       width: 148px!important;
       height: 258px!important;
+      cursor: pointer;
 
     }
   }

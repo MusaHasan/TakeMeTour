@@ -19,6 +19,7 @@
                     class="white TurAvCrd"
                     max-width="min-content"
                     max-height="370"
+                    router to="/about"
                 >
                     <v-img
                     class="white--text align-end"
