@@ -1,10 +1,10 @@
 <template>
   <v-container>
       <v-row class="hidden-sm-and-down">
-          <p>Home <v-icon>mdi-chevron-right</v-icon> Bangkok <v-icon>mdi-chevron-right</v-icon> Street Food Tour in Bangkok Chinatown</p>
+          <p class="navigateTxt">Home <v-icon>mdi-chevron-right</v-icon> Bangkok <v-icon>mdi-chevron-right</v-icon> Street Food Tour in Bangkok Chinatown</p>
       </v-row>
       <v-row>
-          <v-col md="8" lg="8" xl="8" cols="12">
+          <v-col class="pt-7" md="8"  lg="8" xl="8" cols="12">
               <h3 class="d-inline">Street Food Tour in Bangkok Chinatown</h3> 
           </v-col>
           <v-col cols="2"><v-btn class="ma-2 hidden-sm-and-down" text color="indigo"><v-icon>mdi-briefcase-upload-outline</v-icon> Share</v-btn></v-col>
@@ -162,10 +162,13 @@ data:()=>({
  border-radius:4px;
 }
 .imgAvater{
-     padding: 0 44px !important;
+     padding: 8px 44px !important;
 }
 .msTxt{
     margin-left: -17px;
+}
+.navigateTxt{
+    font-size: 12px!important;
 }
 @media only screen
     and (min-device-width : 320px)

@@ -38,8 +38,9 @@
                         
                         <p class="timeTxt"><v-icon>mdi-clock-outline</v-icon> 08:00- 19:00</p>
                       </v-col>
-                      <v-col cols="7">
-                        <p class="caption mt-4" > <span class=" green--text">USD 88.85</span> / <span class="overline">person</span> </p>
+                      <v-spacer/>
+                      <v-col cols="6">
+                        <p class="caption mt-4" > <span class=" green--text">USD 88.85</span> / <span class="personTxt">person</span> </p>
                       </v-col>
                     </v-row>
                     </v-card-text>
@@ -97,7 +98,7 @@ export default {
   }
   .SimilheartIc{
     top: -171px;
-    right: -310px;
+    right: -233px;
     color: white!important;
   }
   @media only screen
@@ -106,6 +107,11 @@ export default {
       .SimilarCrd{
         width: 343px!important;
         height: 370px!important;
+      }
+      .SimilheartIc{
+        top: -171px;
+        right: -310px;
+        color: white!important;
       }
     }
 

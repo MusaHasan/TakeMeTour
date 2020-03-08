@@ -7,10 +7,11 @@
                         <h3 class="mb-6">Not Exactly What You’re Looking For?</h3>
                         <p>Customize existing trips the way you want or even tell us where you want to go! 
                             We’ll find a Local Expert to take you there.</p>
-                        <v-btn class="ma-2 white--text" color="indigo">Send Request</v-btn>
+                        <v-btn class="ma-2 white--text" color="blue darken-1">Send Request</v-btn>
                     </div>
                 </v-col>
-                <v-col class="sideImage pa-0" md="5" lg="5" xl="5" cols="12">    
+                <v-col class="sideImage pa-0" md="5" lg="5" xl="5" cols="12">
+                      
                     <v-img max-width="100%" max-height="290" aspect-ratio="1.7" src="../../assets/Tourimage/asset 88.jpeg"></v-img> 
                 </v-col>
             </v-row>
@@ -34,6 +35,9 @@ export default {
 }
 .notExacTxt{
     padding: 24px 32px ;
+}
+.sideImage .v-image__image--cover{
+    border-radius: 10px;
 }
 @media only screen
     and (min-device-width : 320px)

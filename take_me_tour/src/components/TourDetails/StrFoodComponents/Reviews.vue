@@ -312,7 +312,7 @@
                     </v-col><!-- User Avatar <loop 6times>-->
                     <p>+ 7 more travelers have enjoyed</p>
                     <p>the local experience with TakeMeTour Local Expert</p>
-                    <v-btn class="ma-2 depressed white--text" color="indigo">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
+                    <v-btn class="ma-2 depressed "  outlined color="grey lighten-1"><span style="color:#1CB6E6">More reviews <v-icon>mdi-chevron-right</v-icon></span> </v-btn>
                 </v-row>
             </v-col>
         </v-row>

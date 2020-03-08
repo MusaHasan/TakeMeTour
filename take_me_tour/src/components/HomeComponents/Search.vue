@@ -39,13 +39,13 @@
                 </v-menu> -->
 
             <v-overflow-btn
-            class="white Search-btn"
+            class="white shadow Search-btn"
             color="orange darken-3"
             prepend-icon="mdi-map-marker-outline"
             :items="dropdown_font"
-            label="Overflow Btn"
+            label="Where to go?"
             target="#dropdown-example"
-            solo
+            
             ></v-overflow-btn>
 
             <!-- <v-select
@@ -230,10 +230,17 @@
         border-radius: 4px!important;
         transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;  
     }
+    .shadow{
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75)!important;
+    }
     .v-overflow-btn .v-input__slot, .v-text-field.v-text-field--solo{
-        box-shadow: unset!important;
+        box-shadow:transparent !important;
         border-style: none!important;
     }
+    .v-overflow-btn.v-input--is-focused .v-input__slot, .v-overflow-btn.v-select--is-menu-active .v-input__slot {
+    border-color: transparent !important;
+    box-shadow: 0 1px 6px 0 rgba(255, 255, 255, 0.28)!important;
+}
     .Search-btn .mdi:before{
         padding-left: 25px;
         color: #EF6C00;
@@ -242,9 +249,13 @@
         background-color: #F8FBFB;
         border-radius: 10px 0 0 0;
         margin-left: 36px;
-        margin-right: 0;
-        
+        margin-right: 0; 
     } 
+    .searchCol .v-text-field {
+        padding-top: 0px;
+        padding-right: 20px;
+        margin-top: 4px;
+    }
     .buttonCol{
         background-color: #F8FBFB;
         border-radius: 0 10px 0 0;

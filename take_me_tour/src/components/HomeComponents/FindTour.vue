@@ -6,7 +6,7 @@
           <v-col cols="6">
               <h2 class="findTxt">Find the right tour for you</h2>
               <v-col width="auto">
-                    <v-btn max-width="150" max-height="40" :ripple="false" height="40" class="srcBtn">Try this quiz! <v-icon class="ps-2">mdi-chevron-right</v-icon> </v-btn>
+                    <v-btn max-width="172" max-height="40" :ripple="false" height="40" class="srcBtn px-4">Try this quiz! <v-icon class="ps-2">mdi-chevron-right</v-icon> </v-btn>
               </v-col>
           </v-col>
 

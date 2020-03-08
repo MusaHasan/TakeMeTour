@@ -48,8 +48,9 @@
                         
                         <p class="timeTxt"><v-icon>mdi-clock-outline</v-icon> 08:00- 19:00</p>
                       </v-col>
-                      <v-col cols="7">
-                        <p class="caption mt-4" > <span class=" green--text">USD 88.85</span> / <span class="overline">person</span> </p>
+                      <v-spacer/>
+                      <v-col cols="6">
+                        <p class="caption mt-4" > <span class=" green--text">USD 88.85</span> / <span class="personTxt">person</span> </p>
                       </v-col>
                     </v-row>
                     </v-card-text>
@@ -129,7 +130,9 @@ export default {
     width: fit-content!important;
     padding: 8px 13px;
     border-radius: 0 50px 50px 0;
-
+  }
+  .personTxt{
+    font-size: 9px!important;
   }
   .timeTxt{
     font-size: 9px!important;

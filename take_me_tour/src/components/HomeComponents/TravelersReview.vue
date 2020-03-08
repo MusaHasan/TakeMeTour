@@ -18,8 +18,8 @@
             >
               <v-card
                 class="ma-1 TrvRevCrd"
-                height="170"
-                width="369"
+                height="180"
+                width="365"
                 elevation="0"
                 :ripple="false"
               >
@@ -60,7 +60,7 @@
                 </v-row>
                 <v-row>
                     <v-col>
-                        <p class="cardTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="cardTxt">{{image.text}}</p>
                     </v-col>
                 </v-row>
                
@@ -80,22 +80,22 @@ export default {
     data:()=>({
         images:[
             {
-                avatar:'asset 50.jpg', name:"Lee S.", country:"United States", flag:'asset 51.png'
+                avatar:'asset 50.jpg', name:"Lee S.", country:"United States", flag:'asset 51.png',text:"Great day and experience with Boat as a true local guide"
             },
             {
-                avatar:'asset 52.jpg', name:"mami m.", country:"JP Japan", flag:'asset 53.png'
+                avatar:'asset 52.jpg', name:"mami m.", country:"JP Japan", flag:'asset 53.png',text:"Absolutely wonderful! Going on the trip with Piangduan was absolutely amazing,"
             },
             {
-                avatar:'asset 54.jpg', name:"Joseph G.", country:"GB United Kingdom", flag:'asset 55.png'
+                avatar:'asset 54.jpg', name:"Joseph G.", country:"United Kingdom", flag:'asset 55.png',text:"Everything was above the expectations!"
             },
             {
-                avatar:'asset 56.jpg', name:"Kate L.", country:"CA Canada", flag:'asset 57.png'
+                avatar:'asset 56.jpg', name:"Kate L.", country:"CA Canada", flag:'asset 57.png',text:"We had a great time with Kiki! He gave us lots of time to explore the temples - and the.."
             },
             {
-                avatar:'asset 58.jpg', name:"Ilaria C.", country:"IT Italy", flag:'asset 59.png'
+                avatar:'asset 58.jpg', name:"Ilaria C.", country:"IT Italy", flag:'asset 59.png',text:"Great day and experience with Boat as a true local guide"
             },
             {
-                avatar:'asset 60.jpg', name:"Joe H.", country:"US United States", flag:'asset 51.png'
+                avatar:'asset 60.jpg', name:"Joe H.", country:"US United States", flag:'asset 51.png',text:"Everything was above the expectations!"
             }
         ]
     })

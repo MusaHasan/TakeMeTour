@@ -54,7 +54,7 @@ export default {
         border-radius: .35rem;
     }
     .imagesTMT{
-        margin-top: -17px;
+        margin-top: -27px;
         padding-bottom: 0;
     }
     .headtxt{
