@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <v-container fluid class="headerCon pa-0">
     <video-bg class="mt-12 bg-dark" fluid :sources="['https://d34z6m0qj7i7g9.cloudfront.net/v5-assets/static/video/banner-short.mp4']" img="https://d34z6m0qj7i7g9.cloudfront.net/v5-assets/static/images/home/banner-video-placeholder.jpg">
     <!-- <video-bg :sources="['../assets/BGvideo/banner-short.mp4']" img="someURL"> -->
       <v-container class="bgGrayTanspherent white--text" max-he style="background-color: #00000082;" fluid>
@@ -130,6 +130,13 @@ and (max-device-width : 1224px) {
   .row-sm, .col-sm{
     margin: 20px!important;
     padding: 0 !important;
+  }
+}
+@media only screen
+and (min-device-width : 1224px)
+and (max-device-width : 2004px){
+  .headerCon .VideoBg{
+    height: 635px!important;
   }
 }
   
