@@ -128,7 +128,31 @@
         </v-row><!--Review Images-->
         
         <v-row>
-            <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
+            <v-col class="hidden-md-and-up pa-0" md="4" lg="4" xl="4" cols="12">
+                <v-row>
+                    <v-list-item class="grow ">
+                        <v-col class="pa-0" cols="3"> 
+                            <v-list-item-avatar color="grey darken-3">
+                                <v-img
+                                    class="elevation-6"
+                                    src="../../../assets/Tourimage/asset 64.jpeg"
+                                ></v-img>
+                            </v-list-item-avatar>
+                        </v-col>
+                        <v-col class="pa-0" cols="9">
+                            <v-list-item-content>
+                                <v-list-item-title>Hannah S.</v-list-item-title>
+                                <v-list-item-title>
+                                    <p>February 19, 2020 </p> 
+                                </v-list-item-title>
+                            </v-list-item-content>
+                        </v-col>
+                    </v-list-item>
+                    
+                </v-row>
+            </v-col><!--user image & name-->
+
+            <v-col style="" md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
                 <div class="d-flex">
                     <v-rating
@@ -189,9 +213,9 @@
                 </p>
             </v-col>
             
-            <v-col md="4" lg="4" xl="4" cols="12">
+            <v-col class="hidden-sm-and-down" md="4" lg="4" xl="4" cols="12">
                 <v-row>
-                    <v-list-item class="grow">
+                    <v-list-item class="grow ">
                         <v-col cols="3"> 
                             <v-list-item-avatar color="grey darken-3">
                                 <v-img
@@ -217,6 +241,29 @@
         <hr>
 
         <v-row>
+            <v-col class="hidden-md-and-up pa-0" md="4" lg="4" xl="4" cols="12">
+                <v-row>
+                    <v-list-item class="grow ">
+                        <v-col class="pa-0" cols="3"> 
+                            <v-list-item-avatar color="grey darken-3">
+                                <v-img
+                                    class="elevation-6"
+                                    src="../../../assets/Tourimage/asset 64.jpeg"
+                                ></v-img>
+                            </v-list-item-avatar>
+                        </v-col>
+                        <v-col class="pa-0" cols="9">
+                            <v-list-item-content>
+                                <v-list-item-title>Hannah S.</v-list-item-title>
+                                <v-list-item-title>
+                                    <p>February 19, 2020 </p> 
+                                </v-list-item-title>
+                            </v-list-item-content>
+                        </v-col>
+                    </v-list-item>
+                    
+                </v-row>
+            </v-col><!--user image & name-->
             <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
                 <div class="d-flex">
@@ -233,7 +280,7 @@
                         At the end we had a refreshing traditional Thai dessert :) It was an enjoyable experience.
                 </p>
             </v-col>
-            <v-col md="4" lg="4" xl="4" cols="12">
+            <v-col class="hidden-sm-and-down" md="4" lg="4" xl="4" cols="12">
                     <v-row>
                         <v-list-item class="grow">
                             <v-col cols="3"> 
@@ -260,6 +307,29 @@
         <hr>
 
         <v-row>
+            <v-col class="hidden-md-and-up pa-0" md="4" lg="4" xl="4" cols="12">
+                <v-row>
+                    <v-list-item class="grow ">
+                        <v-col class="pa-0" cols="3"> 
+                            <v-list-item-avatar color="grey darken-3">
+                                <v-img
+                                    class="elevation-6"
+                                    src="../../../assets/Tourimage/asset 64.jpeg"
+                                ></v-img>
+                            </v-list-item-avatar>
+                        </v-col>
+                        <v-col class="pa-0" cols="9">
+                            <v-list-item-content>
+                                <v-list-item-title>Hannah S.</v-list-item-title>
+                                <v-list-item-title>
+                                    <p>February 19, 2020 </p> 
+                                </v-list-item-title>
+                            </v-list-item-content>
+                        </v-col>
+                    </v-list-item>
+                    
+                </v-row>
+            </v-col><!--user image & name-->
             <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
                 <div class="d-flex">
@@ -271,7 +341,7 @@
                     ></v-rating> 4.8
                 </div>
             </v-col>
-            <v-col md="4" lg="4" xl="4" cols="12">
+            <v-col class="hidden-sm-and-down" md="4" lg="4" xl="4" cols="12">
                     <v-row>
                         <v-list-item class="grow">
                             <v-col cols="3"> 
@@ -310,9 +380,11 @@
                             ></v-img>
                         </v-list-item-avatar>
                     </v-col><!-- User Avatar <loop 6times>-->
+                    <div class="text-center">
                     <p>+ 7 more travelers have enjoyed</p>
                     <p>the local experience with TakeMeTour Local Expert</p>
                     <v-btn class="ma-2 depressed "  outlined color="grey lighten-1"><span style="color:#1CB6E6">More reviews <v-icon>mdi-chevron-right</v-icon></span> </v-btn>
+                    </div>
                 </v-row>
             </v-col>
         </v-row>

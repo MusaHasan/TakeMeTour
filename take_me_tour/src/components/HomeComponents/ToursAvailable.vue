@@ -19,7 +19,7 @@
                     class="white TurAvCrd"
                     max-width="min-content"
                     max-height="370"
-                    router to="/about"
+                    
                 >
                     <v-img
                     class="white--text align-end"
@@ -30,24 +30,23 @@
                     <v-icon class="heartIc">mdi-heart-outline</v-icon>
                     </v-img>
 
-                    <v-card-subtitle class="tagTxt">Number 10</v-card-subtitle>
+                    <v-card-subtitle class="tagTxt">Bangkok</v-card-subtitle>
 
-                    <v-card-text class="text--primary">
-                    <div><h4>5 famous Temples & Street Food at Wang Lang... </h4></div>
+                    <v-card-text style="margin: -9px 0;" class="text--primary">
+                    <div><h4 style="font-size:16px;color: #4D4D5B!important;font-weight: 600;">5 famous Temples & Street Food at Wang Lang... </h4></div>
 
-                    <div>Whitsunday Island, Whitsunday..</div>
+                    <p class="mb-0" style="font-size: 14px!important;">Whitsunday Island, Whitsunday..</p>
                     <v-row>
                       <v-col cols="5">
-                        <div class="d-flex">
+                        <div class="d-flex reatingStar">
                             <v-rating
                             color="yellow darken-3"
                             background-color="yellow darken-3"
                             empty-icon="$ratingFull"
-                            small
                           ></v-rating>(114)
                         </div>
                         
-                        <p class="timeTxt"><v-icon>mdi-clock-outline</v-icon> 08:00- 19:00</p>
+                        <p class="timeTxt"><v-icon small>mdi-clock-outline</v-icon> 08:00- 19:00</p>
                       </v-col>
                       <v-spacer/>
                       <v-col cols="6">
@@ -129,14 +128,18 @@ export default {
     color:#1cb6e6!important;
     background-color: aliceblue;
     width: fit-content!important;
-    padding: 8px 13px;
+    padding: 6px 13px;
+    font-size: 12px!important;
     border-radius: 0 50px 50px 0;
+  }
+  .reatingStar .v-rating .v-icon{
+    font-size: 12px!important;
   }
   .personTxt{
     font-size: 9px!important;
   }
   .timeTxt{
-    font-size: 9px!important;
+    font-size: 10px!important;
   }
   .sliderImgCrd{
     margin: 0 5px;

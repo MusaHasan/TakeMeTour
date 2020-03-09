@@ -1,8 +1,8 @@
 <template>
 <v-container fluid class="pa-0 BodyBGcolot">
-    <v-container class="childContainer">
+    <v-container class="childContainer pt-0">
       <v-row >
-          <h2 class="TitelTxt mb-4">Get Inspired</h2>
+          <h2 class="TitelTxt TitleGet mb-4">Get Inspired</h2>
         <v-sheet
           class="mx-auto transparent"
           elevation="0"
@@ -99,6 +99,9 @@ export default {
   }
   .GetSld{
     padding: 0;
+  }
+  .TitleGet{
+    margin: -2px 35px!important;
   }
   
   @media only screen

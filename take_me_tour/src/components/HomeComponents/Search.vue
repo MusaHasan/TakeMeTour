@@ -284,6 +284,7 @@
             background-color: #f8fbfb00;
             border-radius: 0;
             margin: 0px ;
+            padding: 19px 4px!important;
         } 
         .searchBtn{
             padding: 0px 3px!important;

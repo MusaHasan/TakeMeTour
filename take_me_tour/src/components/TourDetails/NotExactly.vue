@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid class="pa-0 BodyBGcolot">
+    <v-container fluid class="pa-0">
         <v-container class="childContainer">
             <v-row class="NotExacRow">
                 <v-col class="notExacTxt" md="7" lg="7" xl="7" cols="12">
@@ -45,13 +45,16 @@ export default {
     .sideImage{
         position: absolute;
         z-index: 0;
-        margin: -6px -3px
+        margin: -6px -29px;
+    }
+    .sideImage .v-responsive__sizer{
+       padding-bottom: 65.8235%!important; 
     }
     .notExacTxt{
         z-index: 1;
         background-color: rgba(240, 245, 248, 0.671)!important;
-        padding: 36px 2px;
-        margin: -36px 14px;
+        padding: 12px 2px;
+        margin: -8px 0;
     }
 }
 </style>

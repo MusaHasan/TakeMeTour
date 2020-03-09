@@ -42,11 +42,11 @@
                         <v-col cols="11" class="d-flex py-2 my-0">
                             <h5 class="mx-2">Adults</h5>
                             <v-spacer></v-spacer>
-                            <v-btn width="45" class=" addBtn " outlined color="teal">
+                            <v-btn min-width="44" class=" addBtn px-2 " outlined color="teal">
                                 <v-icon >mdi-minus</v-icon>
                             </v-btn>
                             <p class="my-2"> 10 </p>
-                            <v-btn width="45" class="addBtn" outlined color="teal">
+                            <v-btn min-width="44" class="addBtn px-2" outlined color="teal">
                                 <v-icon>mdi-plus</v-icon>
                             </v-btn>
                         </v-col><!--Adults-->
@@ -54,11 +54,11 @@
                         <v-col cols="11" class="d-flex py-2 my-0">
                             <h5>Children</h5>
                             <v-spacer></v-spacer>
-                            <v-btn width="45" class="addBtn" outlined color="teal">
+                            <v-btn min-width="44" class="addBtn px-2" outlined color="teal">
                                 <v-icon>mdi-minus</v-icon>
                             </v-btn>
                             <p class="my-2"> 10 </p>
-                            <v-btn width="45" class="addBtn" outlined color="teal">
+                            <v-btn min-width="44" class="addBtn px-2" outlined color="teal">
                                 <v-icon>mdi-plus</v-icon>
                             </v-btn>
                         </v-col><!--Children-->
@@ -100,7 +100,7 @@
                             <v-spacer/> <p>100% Satisfaction guaranteed</p>
                         </v-col>
                         <v-btn dense class="mx-2 white--text" style="padding: 0 114px;
-                        margin-left: 13px!important;"  width="80%" color="green darken-3">
+                        margin-left: 13px!important; background-color:#32D672"  width="86%">
                         Instant Book </v-btn>
                     </v-row>
                 </v-banner>
@@ -154,7 +154,7 @@ export default {
     }
     .GreenTxt{
         font-weight: 700!important;
-        color: green!important;
+        color: rgb(50, 214, 114)!important;
         font-size: 14px;
     }
     .InfoDiv .v-menu__content {

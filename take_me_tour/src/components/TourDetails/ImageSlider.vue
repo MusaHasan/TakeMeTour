@@ -7,10 +7,11 @@
                 :perPage=1
                 :navigationEnabled="true"
                 :paginationEnabled="true"
+                paginationActiveColor="orange"
                 :autoplay="true"
                 :loop="true"
             >
-                <slide v-for="(image,i) in images" :key="i" transition="scale-transition">
+                <slide  v-for="(image,i) in images" :key="i" transition="scale-transition">
                     <div class="card-image">
                         <figure class="image">
                             <img class="image" :src="require(`../../assets/Tourimage/${image.name}`)" alt="Image">

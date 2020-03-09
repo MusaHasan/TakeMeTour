@@ -34,16 +34,16 @@
                         </v-list-item-avatar>
                     </v-col>
                     <v-col md="6" lg="6" xl="6" cols="4">
-                        <v-list-item-content>
-                            <v-list-item-title>{{image.name}}</v-list-item-title>
-                             <v-list-item-subtitle> 
+                        <v-list-item-content style="width:130px" >
+                            <v-list-item-title class="userName">{{image.name}}</v-list-item-title>
+                             <v-list-item-subtitle > 
                                     <v-img
                                         class="white--text d-inline-block"
                                         height="20"
                                         width="30"
                                         :src="require(`../../assets/images/${image.flag}`)"
                                     >
-                                    </v-img> <span class="flagTxt">{{image.country}}</span></v-list-item-subtitle>
+                                    </v-img> <span class="flagTxt"> {{image.country}} </span> </v-list-item-subtitle>
                         </v-list-item-content>
                     </v-col>
                     <v-col cols="2">
@@ -108,13 +108,27 @@ export default {
     font-size: 16px!important;
   }
   .cardTxt{
-    padding: 0 17px!important;
+    padding: 0 21px!important;
     font-size: small;
+    font-size: 14px!important;
+    font-weight: 600!important;
+    color: #4d4d5b!important;
+    font-family: 'Open Sans'!important;
+    margin: -15px 0;
 } 
 .TrvRevCrd{
   background-color: #244b521a!important;
   border-radius: 14px!important;
 }
+.userName{
+  font-family: 'Open Sans'!important;
+  font-weight: 600;
+  color: #4d4d5b!important;
+}
+.flagTxt{
+      font-weight: 600;
+      font-family: 'Open Sans'!important;
+    }
 @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
@@ -125,7 +139,10 @@ export default {
     .flagTxt{
       font-size: 10px;
       font-weight: 400;
+      font-family: 'Open Sans'!important;
     }
-    
+    .cardTxt{
+
+    }
   }
 </style>

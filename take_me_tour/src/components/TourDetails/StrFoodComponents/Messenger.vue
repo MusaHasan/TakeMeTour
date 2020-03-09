@@ -1,7 +1,7 @@
 <template>
   <v-container>
       <v-row class="hidden-sm-and-down">
-          <p class="navigateTxt">Home <v-icon>mdi-chevron-right</v-icon> Bangkok <v-icon>mdi-chevron-right</v-icon> Street Food Tour in Bangkok Chinatown</p>
+          <p class="navigateTxt">Home <v-icon style="width:5px;" size="17">mdi-chevron-right</v-icon> Bangkok <v-icon style="width:5px;" size="17">mdi-chevron-right</v-icon> Street Food Tour in Bangkok Chinatown</p>
       </v-row>
       <v-row>
           <v-col class="pt-7" md="8"  lg="8" xl="8" cols="12">
@@ -22,7 +22,7 @@
                 empty-icon="$ratingFull"
                 class="py-3"
                 ></v-rating>
-                <v-btn class="ma-2 white--text" color="green darken-2">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
+                <v-btn class="ma-2 white--text" color="rgb(50, 214, 114)">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
           </v-col>
       </v-row>
       <v-row class="bgLiteBlue"> <!--Massage section-->
@@ -56,7 +56,7 @@
       </v-row>
       <v-row >
 
-        <v-col class="mx-md-10 mx-lg-10 mx-xl-10 px-6" md="2" lg="2" xl="2" cols="4">
+        <v-col class="ml-md-10 ml-lg-10 ml-xl-10 mr-md-3 mr-lg-3 mr-xl-3 px-6 text-center" md="2" lg="2" xl="2" cols="4">
             <v-avatar color="white" size="62">
             <span class="white--text headline">
                 <v-img
@@ -65,12 +65,11 @@
                     ></v-img>
             </span>
             </v-avatar>
-            <h5>Hosted by locals</h5>
-            <p>3 Hours</p>    
+            <h5>Hosted by locals</h5>    
         </v-col> <!--icons-->
 
-        <v-col class="px-6" md="2" lg="2" xl="2" cols="4">
-            <v-avatar color="white" size="62">
+        <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
+            <v-avatar class="mx-5" color="white" size="62">
             <span class="white--text headline">
                 <v-img
                         class="elevation-0"
@@ -78,12 +77,14 @@
                     ></v-img>
             </span>
             </v-avatar>
+            <div class="text-center">
             <h5>Hosted by</h5>
-            <p>3 Hours</p>    
+            <p>3 Hours</p>
+            </div>    
         </v-col> <!--icons-->
 
-        <v-col class="px-6" md="2" lg="2" xl="2" cols="4">
-            <v-avatar color="white" size="62">
+        <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
+            <v-avatar class="mx-5" color="white" size="62">
                 <span class="white--text headline">
                     <v-img
                             class="elevation-0"
@@ -91,12 +92,14 @@
                         ></v-img>
                 </span>
             </v-avatar>
-            <h5>Hosted by</h5>
-            <p>3 Hours</p>    
+            <div class="text-center">
+            <h5>Vehicle</h5>
+            <p>Private Car</p> 
+            </div>   
         </v-col> <!--icons-->
 
-        <v-col class="px-6" md="2" lg="2" xl="2" cols="4">
-            <v-avatar color="white" size="62">
+        <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
+            <v-avatar class="mx-5" color="white" size="62">
             <span class="white--text headline">
                 <v-img
                         class="elevation-0"
@@ -104,22 +107,25 @@
                     ></v-img>
             </span>
             </v-avatar>
-                
-            <h5>Hosted by</h5>
-            <p>3 Hours</p>    
+             <div class="text-center">  
+                <h5>Free</h5>
+                <p>Hotel Pickup</p>
+             </div>    
         </v-col> <!--icons-->
 
-        <v-col class="px-6" md="2" lg="2" xl="2" cols="4">
-            <v-avatar color="white" size="62">
+        <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
+            <v-avatar class="mx-5" color="white" size="62">
             <span class="white--text headline">
-                <v-img
+                <v-img 
                         class="elevation-0"
                         src="../../../assets/Tourimage/asset 94.jpg"
                     ></v-img>
             </span>
             </v-avatar>
-            <h5>Hosted by</h5>
-            <p>3 Hours</p>    
+            <div class="text-center">
+                <h5>Hosted In</h5>
+                <p>English, ไทย</p> 
+            </div>  
         </v-col> <!--icons-->
             
       </v-row>
@@ -169,6 +175,8 @@ data:()=>({
 }
 .navigateTxt{
     font-size: 12px!important;
+    margin-left: 10px;
+    margin-bottom: -18px!important;
 }
 @media only screen
     and (min-device-width : 320px)

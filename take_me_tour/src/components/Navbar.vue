@@ -56,11 +56,11 @@
             </div>
 
             <div class="my-2 mx-2">
-              <v-btn outlined large color="orange darken-3">log In</v-btn>
+              <v-btn height= "38" outlined large color="orange darken-3">log In</v-btn>
             </div>
 
             <div class="my-2 mx-2">
-              <v-btn large color="orange darken-3">Sign Up</v-btn>
+              <v-btn height= "38" large color="orange darken-3">Sign Up</v-btn>
             </div>
 
             <v-list-item> 
@@ -75,12 +75,13 @@
                     v-for="(item, index) in items"
                     :key="index"
                   >
-                    <v-list-item-title>{{ item.title }}</v-list-item-title>
-                  </v-list-item>
-                </v-list>
-              </v-menu> 
-            </v-list-item>
-          </v-list>
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu> 
+          </v-list-item>
+        </v-list>
+                
         <div class="text-center hidden-lg-and-up">
             <template>
                 <v-app-bar-nav-icon color="orange darken-3" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -93,10 +94,67 @@
             height="660"
             right
           >
+            <v-row>
+              <v-col>
+                <div class="my-2 mx-2">
+                  <v-btn class="mt-8" height= "38" max-width="174" width="175" large color="orange darken-3">Sign Up</v-btn>
+                </div>
 
-            <v-divider></v-divider>
+                <div class="my-2 mx-2">
+                  <v-btn height= "38" max-width="174" width="175" outlined large color="orange darken-3">log In</v-btn>
+                </div>
+
+                <div class="my-2 mx-2">
+                  <v-btn text max-width="174" width="175" class="ml-8 d-flex justify-start" large color="orange darken-3" > <v-icon class="grey--text ">mdi-cash-usd-outline</v-icon> <span class="grey--text text-left">Deals</span> </v-btn>
+                </div>
+
+                <v-row class="ml-12 pl-3">
+                  <v-icon class="socialIc pa-1" v-for="(icon,i) in icons" :key="i">{{icon.name}}</v-icon>  
+                </v-row>
+
+                <v-list-item> 
+                  <v-menu offset-y>
+                    <template v-slot:activator="{ on }">
+                      <v-list-item-subtitle class="grey--text"  v-on="on" >Where to go?
+                        <v-icon class="grey--text">mdi-chevron-down</v-icon>
+                      </v-list-item-subtitle>
+                    </template>
+                    <v-list>
+                      <v-list-item
+                        v-for="(item, index) in items"
+                        :key="index"
+                      >
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                      </v-list-item>
+                    </v-list>
+                  </v-menu> 
+                </v-list-item>
+
+                <v-list-item> 
+                  <v-menu offset-y>
+                    <template v-slot:activator="{ on }">
+                      <v-list-item-subtitle class="grey--text"  v-on="on" >Travel Products
+                        <v-icon class="grey--text">mdi-chevron-down</v-icon>
+                      </v-list-item-subtitle>
+                    </template>
+                    <v-list>
+                      <v-list-item
+                        v-for="(item, index) in items"
+                        :key="index"
+                      >
+                        <v-list-item-title>{{ item.title }}</v-list-item-title>
+                      </v-list-item>
+                    </v-list>
+                  </v-menu> 
+                </v-list-item>
+
+              </v-col>
+              
+            </v-row>
+            <v-divider>
+            </v-divider>
           </v-navigation-drawer>
-      </div>
+      </div> <!--Mini Side bar-->
 <!-- 
       <v-img class="pl-1" max-width="145" max-height="22" src="../assets/images/asset 0.png"></v-img>
       <v-spacer class="d-md-none"></v-spacer>
@@ -112,6 +170,9 @@
       items: [
         { title: 'Home', icon: 'dashboard' },
         { title: 'About', icon: 'question_answer' },
+      ],
+      icons:[
+        {name: "mdi-facebook"}, {name: "mdi-instagram"}, {name: "mdi-pinterest"}, {name: "mdi-twitter"}
       ],
     }),
   }

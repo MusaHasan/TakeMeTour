@@ -1,42 +1,41 @@
 <template>
-<v-container fluid class="pa-0 BodyBGcolot">
+<v-container fluid class="pa-0" >
     <v-container class="childContainer">
-      <h3>Tour Available Tomorrow</h3>
+      <h3 class="simiHeadTxt">Similar Experiences</h3>
       <v-row >
             <v-col md="3" lg="3" xl="3" cols="12" class="mb-2" 
                 v-for="(image,i) in images" :key="i">
+
                 <v-card
                     class="white SimilarCrd"
-                    max-width="min-content"
-                    max-height="370"
+                    
+                    
                 >
                     <v-img
-                    class="white--text align-end"
-                    height="206px"
-                    width="343px"
+                    class="white--text simi-image align-end"
+                    
                     :src="require(`../../assets/images/${image.name}`)"
                     >
                     <v-icon class="SimilheartIc">mdi-heart-outline</v-icon>
                     </v-img>
 
-                    <v-card-subtitle class="tagTxt">Number 10</v-card-subtitle>
+                    <v-card-subtitle class="tagTxt">Bangkok</v-card-subtitle>
 
-                    <v-card-text class="text--primary">
-                    <div><h4>5 famous Temples & Street Food at Wang Lang... </h4></div>
+                    <v-card-text style="margin: -9px 0;" class="text--primary">
+                    <div><h4 style="font-size:16px;color: #4D4D5B!important;font-weight: 600;">5 famous Temples & Street Food at Wang Lang... </h4></div>
 
-                    <div>Whitsunday Island, Whitsunday..</div>
+                    <p class="mb-0" style="font-size: 14px!important;">Whitsunday Island, Whitsunday..</p>
                     <v-row>
                       <v-col cols="5">
-                        <div class="d-flex">
+                        <div class="d-flex reatingStar">
                             <v-rating
                             color="yellow darken-3"
                             background-color="yellow darken-3"
                             empty-icon="$ratingFull"
-                            small
                           ></v-rating>(114)
                         </div>
                         
-                        <p class="timeTxt"><v-icon>mdi-clock-outline</v-icon> 08:00- 19:00</p>
+                        <p class="timeTxt"><v-icon small>mdi-clock-outline</v-icon> 08:00- 19:00</p>
                       </v-col>
                       <v-spacer/>
                       <v-col cols="6">
@@ -87,6 +86,10 @@ export default {
     box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 5px 0px!important;
     cursor: pointer;
   }
+  .simi-image{
+    height: 206px;
+    width: 270px;
+  }
   .tagTxt{
     position: relative;
     top: -18px;
@@ -101,6 +104,10 @@ export default {
     right: -233px;
     color: white!important;
   }
+  .SimilarCrd{
+        width: 343px!important;
+        height: 370px!important;
+      }
   @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
@@ -110,8 +117,15 @@ export default {
       }
       .SimilheartIc{
         top: -171px;
-        right: -310px;
+        right: -288px;
         color: white!important;
+      }
+      .simiHeadTxt{
+        text-align: center!important;
+      }
+      .simi-image{
+        height: 218px;
+        width: 334px;
       }
     }
 

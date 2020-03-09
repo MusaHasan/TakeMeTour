@@ -3,9 +3,9 @@
       <v-row>
           <v-col cols="12">
               <h3>Price Conditions</h3>
-              <p><v-icon color="red">mdi-check</v-icon> Transportation fares are included. </p>
-              <p><v-icon color="red">mdi-check</v-icon> Admission fees are included </p>
-              <p><v-icon color="red">mdi-check</v-icon> Meals are included. </p>
+              <p><v-icon color="rgb(239, 108, 0)">mdi-check</v-icon> Transportation fares are included. </p>
+              <p><v-icon color="rgb(239, 108, 0)">mdi-check</v-icon> Admission fees are included </p>
+              <p><v-icon color="rgb(239, 108, 0)">mdi-check</v-icon> Meals are included. </p>
           </v-col><!--Price Conditions-->
           <v-col cols="12">
               <h3>Why This Trip?</h3>
@@ -59,6 +59,7 @@ export default {
     and (max-device-width : 767px) {
     .mapPic .v-image__image {
             background-size: contain!important;
+            color: rgb(239, 108, 0);
         }
 
     }
