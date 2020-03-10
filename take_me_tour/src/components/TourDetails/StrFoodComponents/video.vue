@@ -1,7 +1,7 @@
 <template>
-    <v-container>
+    <v-container class="py-0">
         <v-row>
-            <v-col cols="12" class="custom_video_player">
+            <v-col cols="12" class="py-0 custom_video_player">
                 <video  :src="source" ref="htmlVideo" v-if="isAnMp4"></video>
                 <iframe class="vidodiv" :src="source" ref="iframeVideo" v-if="!isAnMp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
                 <div class="custom_video_player--controls">

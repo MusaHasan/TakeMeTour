@@ -54,7 +54,7 @@
                         <v-col cols="11" class="d-flex py-2 my-0">
                             <h5>Children</h5>
                             <v-spacer></v-spacer>
-                            <v-btn min-width="44" class="addBtn px-2" outlined color="teal">
+                            <v-btn min-width="44" disabled class="addBtn px-2" outlined color="teal">
                                 <v-icon>mdi-minus</v-icon>
                             </v-btn>
                             <p class="my-2"> 10 </p>

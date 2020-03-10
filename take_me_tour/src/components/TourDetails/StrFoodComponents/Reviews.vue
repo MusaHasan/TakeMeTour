@@ -4,7 +4,7 @@
         <v-row >
             <v-col md="7" lg="7" xl="7" cols="12" >
                 <div class="d-flex">
-                    <h3 class="mt-3">Reviews (50)</h3> 
+                    <h3 class="mt-3 d-flex">Reviews <p class="ml-1 mt-1">(50)</p></h3> 
                     <v-spacer/>
                     <v-rating
                         color="yellow darken-3"
@@ -159,7 +159,7 @@
                     color="yellow darken-3"
                     background-color="yellow darken-3"
                     empty-icon="$ratingFull"
-                    class=""
+                    class="mr-2"
                     ></v-rating> 4.8
                 </div>
                 <p>Eddie was very friendly, kind & knowledgeable of the Chinatown neighborhood. Being a native of 
@@ -208,8 +208,8 @@
                         </v-card>
                     </v-col> <!--Review images <loop 4 times>-->
                 </v-row><!--Review Images-->
-                <p>
-                    Helpful? <v-icon style="border-right: 1px solid gray;">mdi-thumb-up-outline</v-icon> <v-icon>mdi-thumb-down-outline</v-icon>
+                <p style="font-size:10px!important">
+                    Helpful? <v-icon class="px-2" color="rgb(161, 173, 179)" style="font-size:16px!important; border-right: 1px solid #425e6c;">mdi-thumb-up-outline</v-icon> <v-icon class="px-2" color="rgb(161, 173, 179)" style="font-size:16px!important;">mdi-thumb-down-outline</v-icon>
                 </p>
             </v-col>
             
@@ -238,7 +238,7 @@
             </v-col><!--user image & name-->
         </v-row> <!--Review Title reating F-iconImg-->
 
-        <hr>
+        <div style="border-bottom: 1px solid #d0d0d0;"></div><!--Line break-->
 
         <v-row>
             <v-col class="hidden-md-and-up pa-0" md="4" lg="4" xl="4" cols="12">
@@ -271,13 +271,16 @@
                     color="yellow darken-3"
                     background-color="yellow darken-3"
                     empty-icon="$ratingFull"
-                    class=""
+                    class="mr-2"
                     ></v-rating> 4.8
                 </div>
                 <p>Eddie was very friendly, kind & knowledgeable of the Chinatown neighborhood. Being a native of 
                     Bangkok, he took me to some local favorite eateries that were very savory. It was great 
                     to have a local navigate me through this very exciting but busy area.
                         At the end we had a refreshing traditional Thai dessert :) It was an enjoyable experience.
+                </p>
+                <p style="font-size:10px!important">
+                    Helpful? <v-icon class="px-2" color="rgb(161, 173, 179)" style="font-size:16px!important; border-right: 1px solid #425e6c;">mdi-thumb-up-outline</v-icon> <v-icon class="px-2" color="rgb(161, 173, 179)" style="font-size:16px!important;">mdi-thumb-down-outline</v-icon>
                 </p>
             </v-col>
             <v-col class="hidden-sm-and-down" md="4" lg="4" xl="4" cols="12">
@@ -304,7 +307,7 @@
             </v-col><!--user image & name-->
         </v-row> <!--Review Title reating F-iconImg-->
 
-        <hr>
+       <div style="border-bottom: 1px solid #d0d0d0;"></div><!--Line break-->
 
         <v-row>
             <v-col class="hidden-md-and-up pa-0" md="4" lg="4" xl="4" cols="12">
@@ -332,14 +335,17 @@
             </v-col><!--user image & name-->
             <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
-                <div class="d-flex">
+                <div class="d-flex mb-10">
                     <v-rating
                     color="yellow darken-3"
                     background-color="yellow darken-3"
                     empty-icon="$ratingFull"
-                    class=""
+                    class="mr-2"
                     ></v-rating> 4.8
                 </div>
+                <p style="font-size:10px!important">
+                    Helpful? <v-icon class="px-2" color="rgb(161, 173, 179)" style="font-size:16px!important; border-right: 1px solid #425e6c;">mdi-thumb-up-outline</v-icon> <v-icon class="px-2" color="rgb(161, 173, 179)" style="font-size:16px!important;">mdi-thumb-down-outline</v-icon>
+                </p>
             </v-col>
             <v-col class="hidden-sm-and-down" md="4" lg="4" xl="4" cols="12">
                     <v-row>
@@ -365,7 +371,7 @@
             </v-col><!--user image & name-->
         </v-row> <!--Review Title reating F-iconImg-->
 
-        <hr>
+        <div style="border-bottom: 1px solid #d0d0d0;"></div><!--Line break-->
         
 
         <v-row justify="center">

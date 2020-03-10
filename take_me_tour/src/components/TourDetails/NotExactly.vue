@@ -53,7 +53,7 @@ export default {
     .notExacTxt{
         z-index: 1;
         background-color: rgba(240, 245, 248, 0.671)!important;
-        padding: 12px 2px;
+        padding: 16px 2px;
         margin: -8px 0;
     }
 }

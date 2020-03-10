@@ -4,18 +4,18 @@
           <p class="navigateTxt">Home <v-icon style="width:5px;" size="17">mdi-chevron-right</v-icon> Bangkok <v-icon style="width:5px;" size="17">mdi-chevron-right</v-icon> Street Food Tour in Bangkok Chinatown</p>
       </v-row>
       <v-row>
-          <v-col class="pt-7" md="8"  lg="8" xl="8" cols="12">
+          <v-col class="pt-9 pb-0" md="8"  lg="8" xl="8" cols="12">
               <h3 class="d-inline">Street Food Tour in Bangkok Chinatown</h3> 
           </v-col>
           <v-col cols="2"><v-btn class="ma-2 hidden-sm-and-down" text color="indigo"><v-icon>mdi-briefcase-upload-outline</v-icon> Share</v-btn></v-col>
           <v-col cols="2"><v-btn class="ma-2 hidden-sm-and-down" text color="indigo"><v-icon>mdi-heart-outline</v-icon> Wishlist</v-btn></v-col>
-      </v-row>
+      </v-row><!--Street Food Title share, wishlist ICon-->
       <v-row>
-          <v-col cols="12" class="d-flex">
-            <v-img class="mx-3" max-width="92" max-height="22" src="../../../assets/Tourimage/asset 11.png"></v-img> <span class="blueTxt">Bangkok</span> 
+          <v-col cols="12" class="d-flex py-0">
+            <v-img class="mx-3 " max-width="92" max-height="22" src="../../../assets/Tourimage/asset 11.png"></v-img> <span class="blueTxt">Bangkok</span> 
           </v-col>
 
-          <v-col md="12" lg="12" xl="12" cols="6" class="d-flex">
+          <v-col md="12" lg="12" xl="12" cols="6" class="d-flex pt-0 pb-2">
                 <v-rating
                 color="yellow darken-3"
                 background-color="yellow darken-3"
@@ -57,7 +57,7 @@
       <v-row >
 
         <v-col class="ml-md-10 ml-lg-10 ml-xl-10 mr-md-3 mr-lg-3 mr-xl-3 px-6 text-center" md="2" lg="2" xl="2" cols="4">
-            <v-avatar color="white" size="62">
+            <v-avatar color="white" class="mt-6" size="35">
             <span class="white--text headline">
                 <v-img
                         class="elevation-0"
@@ -65,11 +65,11 @@
                     ></v-img>
             </span>
             </v-avatar>
-            <h5>Hosted by locals</h5>    
+            <h5 class="iconName">Hosted by locals</h5>    
         </v-col> <!--icons-->
 
         <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
-            <v-avatar class="mx-5" color="white" size="62">
+            <v-avatar class="mx-9 mt-6" color="white" size="35">
             <span class="white--text headline">
                 <v-img
                         class="elevation-0"
@@ -78,13 +78,13 @@
             </span>
             </v-avatar>
             <div class="text-center">
-            <h5>Hosted by</h5>
+            <h5 class="iconName">Hosted by</h5>
             <p>3 Hours</p>
             </div>    
         </v-col> <!--icons-->
 
         <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
-            <v-avatar class="mx-5" color="white" size="62">
+            <v-avatar class="mx-9 mt-6" color="white" size="35">
                 <span class="white--text headline">
                     <v-img
                             class="elevation-0"
@@ -93,13 +93,13 @@
                 </span>
             </v-avatar>
             <div class="text-center">
-            <h5>Vehicle</h5>
+            <h5 class="iconName">Vehicle</h5>
             <p>Private Car</p> 
             </div>   
         </v-col> <!--icons-->
 
         <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
-            <v-avatar class="mx-5" color="white" size="62">
+            <v-avatar class="mx-9 mt-6" color="white" size="35">
             <span class="white--text headline">
                 <v-img
                         class="elevation-0"
@@ -108,13 +108,13 @@
             </span>
             </v-avatar>
              <div class="text-center">  
-                <h5>Free</h5>
+                <h5 class="iconName">Free</h5>
                 <p>Hotel Pickup</p>
              </div>    
         </v-col> <!--icons-->
 
         <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
-            <v-avatar class="mx-5" color="white" size="62">
+            <v-avatar class="mx-9 mt-6" color="white" size="35">
             <span class="white--text headline">
                 <v-img 
                         class="elevation-0"
@@ -123,7 +123,7 @@
             </span>
             </v-avatar>
             <div class="text-center">
-                <h5>Hosted In</h5>
+                <h5 class="iconName">Hosted In</h5>
                 <p>English, ไทย</p> 
             </div>  
         </v-col> <!--icons-->
@@ -177,6 +177,12 @@ data:()=>({
     font-size: 12px!important;
     margin-left: 10px;
     margin-bottom: -18px!important;
+}
+.iconName{
+    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #425e6c;
 }
 @media only screen
     and (min-device-width : 320px)

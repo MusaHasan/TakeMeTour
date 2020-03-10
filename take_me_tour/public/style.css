@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300&display=swap');
 .v-application{
     font-family: 'Montserrat','Prompt','Open Sans', sans-serif!important;
 }
@@ -7,7 +8,8 @@ p{
     white-space: pre-wrap;
     font-family: 'Montserrat', 'Prompt', Tahoma, sans-serif !important;
     font-weight: 300 !important;
-    color: rgb(66, 94, 108) !important;
+    color: rgb(66, 94, 108);
+    /* color: #536975 !important; */
     line-height: 1.57 !important;
     font-size: 15px !important;
     margin: 0px;

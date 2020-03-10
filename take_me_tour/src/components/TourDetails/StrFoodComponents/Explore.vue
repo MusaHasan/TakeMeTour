@@ -22,10 +22,13 @@
                   <div class="fill-height text-center bottom-gradient">{{image.txt}}</div>                    
                 </v-img>
               </v-card>
+              
           </v-col>
-          <hr>
+          
       </v-row >
       
+      <div class="mt-4" style="border-bottom: 1px solid #d0d0d0;"></div><!--Line break-->
+
       <v-row class="hidden-md-and-up">
         <v-sheet
           class="mx-auto transparent"
