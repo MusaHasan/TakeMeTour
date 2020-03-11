@@ -1,7 +1,7 @@
 <template>
 <v-container fluid class="pa-0 FootbgColor">
   <v-container class="childContainer">
-      <v-row>
+      <v-row class="ma-2">
           <v-col md="3" lg="3" xl="3" cols="12" class="BtnDv">
               <h3 class="BtnTtl" >Currency</h3>
               <v-row>
@@ -10,7 +10,7 @@
                             <template v-slot:activator="{ on }">
                                 <v-hover v-slot:default="{ hover }">
                                     <v-btn
-                                    class="footerBtn active mb-6"
+                                    class="footerBtn active px-0 mb-6"
                                     height="48"
                                     width="206"
                                     :ripple="false"
@@ -20,7 +20,7 @@
                                     :elevation="hover ? 12 : 0"
                                     :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
                                     >
-                                        <span class="mr-12">US Dollar</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                                        <span class="mr-12 pr-6">US Dollar</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
                                     </v-btn>
                                 </v-hover>
                             </template>
@@ -51,7 +51,7 @@
                                     :elevation="hover ? 12 : 0"
                                     :class="{ 'on-hover': hover, activeBtn2 : isActive2 }"
                                     >
-                                        <span class="mr-12 ">United States</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                                        <span class="mr-12 pl-1 ">United States</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
                                     </v-btn>
                                 </v-hover>
                             </template>
@@ -67,8 +67,8 @@
                     </div>
               </v-row>
               <h3 class="BtnTtl">Follow us on</h3>
-              <v-row>
-                <v-icon class="socialIc pa-1" v-for="(icon,i) in icons" :key="i">{{icon.name}}</v-icon>  
+              <v-row class="footerIcon">
+                <v-icon  class="socialIc pa-1" v-for="(icon,i) in icons" :key="i">{{icon.name}}</v-icon>  
               </v-row>
           </v-col>
 
@@ -76,40 +76,51 @@
               <h3 class="listTtl">About TakeMeTour</h3>
               <v-row>
                     <v-list-item>
-                        <v-list-item-content>
-                            <v-list-item-subtitle class="socialIc mb-1" v-for="(item,i) in AbTMT" :key="i" >{{item.txt}}</v-list-item-subtitle>
+                        <v-list-item-content class="footerlist">
+                            <p style="font-size: 14!important;" class="footerListItm mb-1" v-for="(item,i) in AbTMT" :key="i" >{{item.txt}}</p>
                         </v-list-item-content>
                     </v-list-item>
               </v-row>
               <h3 class="listTtl">Our Projects</h3>
               <v-row>
                   <v-list-item>
-                    <v-list-item-content>
-                        <v-list-item-subtitle class="socialIc mb-1" v-for="(item,i) in OuProj" :key="i" >{{item.txt}}</v-list-item-subtitle>
+                    <v-list-item-content class="footerlist">
+                        <p style="font-size: 14!important;" class="footerListItm mb-1" v-for="(item,i) in OuProj" :key="i" >{{item.txt}}</p>
                     </v-list-item-content>
                   </v-list-item> 
               </v-row>
           </v-col>
-          <v-col md="3" lg="3" xl="3" cols="12">
+          <v-col class="py-0" md="3" lg="3" xl="3" cols="12">
               <h3 class="listTtl">Top Destinations</h3>
               <v-row>
                   <v-list-item>
-                    <v-list-item-content >
-                        <v-list-item-subtitle class="socialIc mb-1" v-for="(item,i) in TopDes" :key="i" >{{item.txt}}</v-list-item-subtitle>
+                    <v-list-item-content class="footerlist">
+                        <p style="font-size: 14!important;" class="footerListItm mb-1" v-for="(item,i) in TopDes" :key="i" >{{item.txt}}</p>
                     </v-list-item-content>
                   </v-list-item> 
               </v-row>
           </v-col>
-          <v-col md="3" lg="3" xl="3" cols="12">
+          <v-col class="py-0" md="3" lg="3" xl="3" cols="12">
               <h3 class="listTtl">Top Activities</h3>
               <v-row>
                   <v-list-item>
-                    <v-list-item-content >
-                        <v-list-item-subtitle class="socialIc mb-1" v-for="(item,i) in TopAct" :key="i" >{{item.txt}}</v-list-item-subtitle>
+                    <v-list-item-content class="footerlist">
+                        <p style="font-size: 14!important;" class="footerListItm mb-1" v-for="(item,i) in TopAct" :key="i" >{{item.txt}}</p>
                     </v-list-item-content>
                   </v-list-item> 
               </v-row>
           </v-col>
+      </v-row>
+      <v-row>
+          <v-col class="py-10 text-center" cols="12">
+              <p class="hidden-sm-and-down" style="font-size: 0.875rem!important;">
+                Copyright © 2020 TakeMeTour Pte. Ltd. All rights reserved.
+              </p>
+              <p class="hidden-md-and-up" style="font-size: 0.875rem!important;">
+                Copyright © 2020 TakeMeTour Pte. Ltd.
+              </p>
+          </v-col>
+          
       </v-row>
   </v-container>
   </v-container>
@@ -187,11 +198,19 @@ export default {
 
 <style>
     .socialIc{
-        color: #2F424C!important;
+        color: #2f424c!important;
         transition: opacity .4s ease-in-out!important;
     }
-    .socialIc:not(.on-hover) {
+    .footerlist .footerListItm{
+         color: #2f424c!important;
+        transition: opacity .4s ease-in-out!important;
+    }
+    .BtnTtl .socialIc:not(.on-hover) {
     opacity: 0.6!important;
+    font-size: xx-large;
+    }
+    .footerIcon .v-icon.v-icon{
+        font-size: 31px!important;
     }
     .FootbgColor{
         background-color: #F0F5F7;
@@ -222,7 +241,9 @@ export default {
         .BtnDv{
             padding: 4px 25px;
         }
-        
+        .footerlist .footerListItm{
+            font-size: small!important;
+        }
     }
     
 </style>

@@ -16,13 +16,13 @@
                   Once you book this tour, we will assign it to our list of Local Experts with excellent 
                   know-how who are ready at your convenience to guide you through this trip.</p>
           </v-col><!--Why This Trip? How Local Is It? What Makes It Unique? < loop >-->
-          <v-col cols="12">
+          <v-col class="pb-0" cols="12">
               <v-row>
-                  <v-col md="5" lg="5" xl="5" cols="12">
+                  <v-col class="py-0" md="5" lg="5" xl="5" cols="12">
                       <h3 class="mb-4">Meeting Points</h3>
                       <h5><v-icon>mdi-alpha-m-box</v-icon> MRT Stations</h5>
                       <p class="mb-0">- Hua Lamphong</p>
-                      <p>- Wat Mangkon</p>
+                      <p class="mb-0">- Wat Mangkon</p>
                   </v-col>
                   <v-col md="7" class="pa-0 " lg="7" xl="7" cols="12">
                       <v-card
@@ -63,10 +63,15 @@ export default {
 @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
-    .mapPic .v-image__image {
+        .mapPic .v-image__image {
             background-size: contain!important;
             color: rgb(239, 108, 0);
         }
+
+    .mapPic{
+        height: 292px!important;
+    }
+
 
     }
 </style>

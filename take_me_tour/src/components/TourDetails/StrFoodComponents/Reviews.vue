@@ -39,7 +39,7 @@
                         <template v-slot:activator="{ on }">
                             <v-hover v-slot:default="{ hover }">
                                 <v-btn
-                                class="active socialIc mr-1 mb-1 mt-10"
+                                class="active allCountries mr-1 mb-1 mt-2 mt-md-10 mt-lg-10 mt-xl-10"
                                 height="34"
                                 width="202"
                                 :ripple="false"
@@ -50,7 +50,7 @@
                                 :elevation="hover ? 12 : 2"
                                 :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
                                 >
-                                   <v-img src="../../../assets/Tourimage/asset 51.png"></v-img> <span class="mr-8">All Countries</span><v-icon color="grey darken-4">mdi-menu-down</v-icon>
+                                   <v-img src="../../../assets/Tourimage/asset 51.png"></v-img> <span class=" mx-1 mr-2 mr-md-8 mr-lg-8 mr-xl-8">All Countries</span><v-icon color="grey darken-4">mdi-menu-down</v-icon>
                                 </v-btn>
                             </v-hover>
                         </template>
@@ -68,7 +68,7 @@
                         <template v-slot:activator="{ on }">
                             <v-hover v-slot:default="{ hover }">
                                 <v-btn
-                                class="active socialIc ml-1 mb-1 mt-10"
+                                class="active sortRecent ml-1 mb-1 mt-2 mt-md-10 mt-lg-10 mt-xl-10"
                                 height="34"
                                 width="202"
                                 :ripple="false"
@@ -79,7 +79,7 @@
                                 :elevation="hover ? 12 : 2"
                                 :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
                                 >
-                                    <span class="mr-12">Dropdown</span><v-icon color="grey darken-1">mdi-swap-vertical</v-icon>
+                                    <span class="mr-4 mr-md-10 mr-lg-10 mr-xl-10">Sort:mostRec.</span><v-icon color="grey darken-1">mdi-swap-vertical</v-icon>
                                 </v-btn>
                             </v-hover>
                         </template>
@@ -131,7 +131,7 @@
             <v-col class="hidden-md-and-up pa-0" md="4" lg="4" xl="4" cols="12">
                 <v-row>
                     <v-list-item class="grow ">
-                        <v-col class="pa-0" cols="3"> 
+                        <v-col class="pa-0 avatarIcon" cols="2"> 
                             <v-list-item-avatar color="grey darken-3">
                                 <v-img
                                     class="elevation-6"
@@ -139,8 +139,8 @@
                                 ></v-img>
                             </v-list-item-avatar>
                         </v-col>
-                        <v-col class="pa-0" cols="9">
-                            <v-list-item-content>
+                        <v-col class="pa-0" cols="12">
+                            <v-list-item-content class="pb-0">
                                 <v-list-item-title>Hannah S.</v-list-item-title>
                                 <v-list-item-title>
                                     <p>February 19, 2020 </p> 
@@ -152,7 +152,7 @@
                 </v-row>
             </v-col><!--user image & name-->
 
-            <v-col style="" md="8" lg="8" xl="8" cols="12"><!--title txt-->
+            <v-col class="py-0 py-md-3 py-lg-3 py-xl-3" md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
                 <div class="d-flex">
                     <v-rating
@@ -203,7 +203,12 @@
                                 class="white--text img align-end"
                                 height="100%"
                                 src="../../../assets/images/asset 42.jpeg"
-                            >                    
+                            >
+                                <v-row style="height:113px">
+                                    <v-col style="background-color:#000000bd;">
+                                         <h5 style="font-size: 23px;" class="mt-6 ml-5 white-text"><v-icon color="white">mdi-plus</v-icon> 1</h5>
+                                    </v-col>
+                                </v-row>                   
                             </v-img>
                         </v-card>
                     </v-col> <!--Review images <loop 4 times>-->
@@ -244,7 +249,7 @@
             <v-col class="hidden-md-and-up pa-0" md="4" lg="4" xl="4" cols="12">
                 <v-row>
                     <v-list-item class="grow ">
-                        <v-col class="pa-0" cols="3"> 
+                        <v-col class="pa-0 avatarIcon" cols="2"> 
                             <v-list-item-avatar color="grey darken-3">
                                 <v-img
                                     class="elevation-6"
@@ -252,8 +257,8 @@
                                 ></v-img>
                             </v-list-item-avatar>
                         </v-col>
-                        <v-col class="pa-0" cols="9">
-                            <v-list-item-content>
+                        <v-col class="pa-0" cols="10">
+                            <v-list-item-content class="pb-0">
                                 <v-list-item-title>Hannah S.</v-list-item-title>
                                 <v-list-item-title>
                                     <p>February 19, 2020 </p> 
@@ -264,7 +269,7 @@
                     
                 </v-row>
             </v-col><!--user image & name-->
-            <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
+            <v-col class="py-0 py-md-3 py-lg-3 py-xl-3" md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
                 <div class="d-flex">
                     <v-rating
@@ -313,7 +318,7 @@
             <v-col class="hidden-md-and-up pa-0" md="4" lg="4" xl="4" cols="12">
                 <v-row>
                     <v-list-item class="grow ">
-                        <v-col class="pa-0" cols="3"> 
+                        <v-col class="pa-0 avatarIcon" cols="2"> 
                             <v-list-item-avatar color="grey darken-3">
                                 <v-img
                                     class="elevation-6"
@@ -321,8 +326,8 @@
                                 ></v-img>
                             </v-list-item-avatar>
                         </v-col>
-                        <v-col class="pa-0" cols="9">
-                            <v-list-item-content>
+                        <v-col class="pa-0" cols="10">
+                            <v-list-item-content class="pb-0">
                                 <v-list-item-title>Hannah S.</v-list-item-title>
                                 <v-list-item-title>
                                     <p>February 19, 2020 </p> 
@@ -333,7 +338,7 @@
                     
                 </v-row>
             </v-col><!--user image & name-->
-            <v-col md="8" lg="8" xl="8" cols="12"><!--title txt-->
+            <v-col class="py-0 py-md-3 py-lg-3 py-xl-3" md="8" lg="8" xl="8" cols="12"><!--title txt-->
                 <h3>Street Food Tour in Bangkok Chinatown</h3>
                 <div class="d-flex mb-10">
                     <v-rating
@@ -375,7 +380,7 @@
         
 
         <v-row justify="center">
-            <v-col md="8" lg="8" xl="8" cols="12">
+            <v-col  md="8" lg="8" xl="8" cols="12">
                 <v-row justify="center">
                     <v-col  cols="2" v-for="(image,i) in images"
                     :key="i"> 
@@ -429,32 +434,32 @@ export default {
 <style>
     .reating .v-icon{
         font-size: 12px!important;
-    }
-    .miniReating{
-        margin: -10px 0;
-    }
-    .reatingTxt{
-        padding-right: 190px;
-    }
-    .RvwImgRow1{
-        padding-left: 27px;
-    }
-    .RvwImgCol1{
-        margin: 0 -24px;
-    }
-    .RvwImgRow2{
-        padding-left: 10px;
-    }
-    .threeDot{
-        padding: 12px;
-        margin: 48px 0;
-    }
-    .RvwImgCol2{
-        margin: 0 -16px;
-    }
-    .RvwImgCrd2{
-        height: 128px;
-        width: 128px;
+        }
+        .miniReating{
+            margin: -10px 0;
+        }
+        .reatingTxt{
+            padding-right: 190px;
+        }
+        .RvwImgRow1{
+            padding-left: 27px;
+        }
+        .RvwImgCol1{
+            margin: 0 -24px;
+        }
+        .RvwImgRow2{
+            padding-left: 10px;
+        }
+        .threeDot{
+            padding: 12px;
+            margin: 48px 0;
+        }
+        .RvwImgCol2{
+            margin: 0 -16px;
+        }
+        .RvwImgCrd2{
+            height: 128px;
+            width: 128px;
     }
     @media only screen
     and (min-device-width : 320px)
@@ -483,6 +488,16 @@ export default {
         }
         .RvwImgCol2 {
             margin: 0 -4px;
+        }
+        .allCountries{
+            width: 183px!important;
+        }
+        .sortRecent{
+            width: 183px!important;
+        }
+        .avatarIcon .v-list-item__avatar{
+            margin-top: -6px;
+            margin-left: 10px;
         }
     }
 </style>

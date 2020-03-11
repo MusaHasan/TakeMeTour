@@ -77,47 +77,47 @@ export default {
 </script>
 <style >
   .v-slide-group__prev, .v-slide-group__next{
-    flex: 0 1 34px!important;
-    min-width: 27px!important;
-    background-color: #fffafa00;
-  }
-  .SimilarCrd{
-    border-radius: 6px!important;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 5px 0px!important;
-    cursor: pointer;
-  }
-  .simi-image{
-    height: 206px;
-    width: 270px;
-  }
-  .tagTxt{
-    position: relative;
-    top: -18px;
-    color:#1cb6e6!important;
-    background-color: aliceblue;
-    width: fit-content!important;
-    padding: 8px 13px;
-    border-radius: 0 50px 50px 0;
-  }
-  .SimilheartIc{
-    top: -171px;
-    right: -233px;
-    color: white!important;
-  }
-  .SimilarCrd{
-        width: 343px!important;
-        height: 370px!important;
+      flex: 0 1 34px!important;
+      min-width: 27px!important;
+      background-color: #fffafa00;
+    }
+    .SimilarCrd{
+      border-radius: 6px!important;
+      box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 5px 0px!important;
+      cursor: pointer;
+    }
+    .simi-image{
+      height: 206px;
+      width: 270px;
+    }
+    .tagTxt{
+      position: relative;
+      top: -18px;
+      color:#1cb6e6!important;
+      background-color: aliceblue;
+      width: fit-content!important;
+      padding: 8px 13px;
+      border-radius: 0 50px 50px 0;
+    }
+    .SimilheartIc{
+      top: -171px;
+      right: -233px;
+      color: white!important;
+    }
+    .SimilarCrd{
+          width: 343px!important;
+          height: 370px!important;
       }
   @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
       .SimilarCrd{
-        width: 343px!important;
+        width: 100%!important;
         height: 370px!important;
       }
       .SimilheartIc{
         top: -171px;
-        right: -288px;
+        left: 86%;
         color: white!important;
       }
       .simiHeadTxt{
@@ -125,7 +125,7 @@ export default {
       }
       .simi-image{
         height: 218px;
-        width: 334px;
+        width: 100%;
       }
     }
 

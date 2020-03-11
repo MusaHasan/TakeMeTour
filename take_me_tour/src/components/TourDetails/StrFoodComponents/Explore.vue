@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h3>Explore This Trip</h3>
+    <h3 class="pb-3">Explore This Trip</h3>
       <v-row class="hidden-sm-and-down">
         
           <v-col class="px-0 Ex-images " cols="3" v-for="(image,i) in images"
@@ -27,7 +27,7 @@
           
       </v-row >
       
-      <div class="mt-4" style="border-bottom: 1px solid #d0d0d0;"></div><!--Line break-->
+      <div class="mt-4 hidden-sm-and-down" style="border-bottom: 1px solid #d0d0d0;"></div><!--Line break-->
 
       <v-row class="hidden-md-and-up">
         <v-sheet
@@ -51,6 +51,7 @@
                     class="white--text img align-end"
                     height="100%"
                     :src="require(`../../../assets/images/${image.name}`)"
+                    gradient="to bottom , rgba(255, 250, 250, 0.01),rgba(255, 250, 250, 0.01), rgba(191, 195, 217, 0.2), rgba(191, 195, 217, 0.2), rgba(0, 0, 0, 0.99)"
                 >
                   <div class="fill-height text-center pl-4 body-1">{{image.txt}}</div>                    
                 </v-img>
@@ -60,6 +61,7 @@
           </v-slide-group>
         </v-sheet>
       </v-row>
+      <div class="mt-4 hidden-md-and-up" style="border-bottom: 1px solid #d0d0d0;"></div><!--Line break-->
   </v-container>
 </template>
 

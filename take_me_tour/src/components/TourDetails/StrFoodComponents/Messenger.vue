@@ -3,8 +3,48 @@
       <v-row class="hidden-sm-and-down">
           <p class="navigateTxt">Home <v-icon style="width:5px;" size="17">mdi-chevron-right</v-icon> Bangkok <v-icon style="width:5px;" size="17">mdi-chevron-right</v-icon> Street Food Tour in Bangkok Chinatown</p>
       </v-row>
+       <v-row class="hidden-md-and-up mt-3">
+            <v-col cols="5">
+                <v-row class="mx-1">
+                    <v-col class="pa-0" cols="4">
+                    <v-card
+                            class="mx-0 text-center"
+                            tile
+                            max-width="36"
+                            max-height="32"
+                        >
+                            <p style="font-size:9px!important; background-color:rgb(22, 196, 100)!important " class="mb-0 white--text">MAR</p>
+                            <p style="font-size:13px!important"><v-icon color="orange darken-3" style="font-size:13px!important">mdi-flash</v-icon>12</p>
+                        </v-card>
+                    </v-col>
+                    <v-col class="pa-0" cols="4">
+                    <v-card
+                            class="mx-0 text-center"
+                            tile
+                            max-width="36"
+                            max-height="32"
+                        >
+                            <p style="font-size:9px!important; background-color:rgb(22, 196, 100)!important " class="mb-0 white--text">MAR</p>
+                            <p style="font-size:13px!important"><v-icon color="orange darken-3" style="font-size:13px!important">mdi-flash</v-icon>13</p>
+                        </v-card>
+                    </v-col>
+                    <v-col class="pa-0" cols="4">
+                    <v-card
+                            class="mx-0 text-center"
+                            tile
+                            max-width="36"
+                            max-height="32"
+                        >
+                            <p style="font-size:9px!important; background-color:rgb(22, 196, 100)!important " class="mb-0 white--text">MAR</p>
+                            <p style="font-size:13px!important"><v-icon color="orange darken-3" style="font-size:13px!important">mdi-flash</v-icon>14</p>
+                        </v-card>
+                    </v-col>
+                </v-row>
+            </v-col>
+            <v-col cols="7"></v-col>
+        </v-row>
       <v-row>
-          <v-col class="pt-9 pb-0" md="8"  lg="8" xl="8" cols="12">
+          <v-col class="pt-1 pt-md-9 pt-lg-9 pt-xl-9 pb-0" md="8"  lg="8" xl="8" cols="12">
               <h3 class="d-inline">Street Food Tour in Bangkok Chinatown</h3> 
           </v-col>
           <v-col cols="2"><v-btn class="ma-2 hidden-sm-and-down" text color="indigo"><v-icon>mdi-briefcase-upload-outline</v-icon> Share</v-btn></v-col>

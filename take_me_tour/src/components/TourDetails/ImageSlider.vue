@@ -18,7 +18,20 @@
                         </figure>
                     </div>
                 </slide>
+                
             </carousel>
+           <v-row class="upperIcons hidden-md-and-up">
+               <v-col cols="2"> <v-icon class="left" color="white">mdi-chevron-left</v-icon> </v-col>
+               <v-col cols="8"></v-col>
+               <v-col class="px-0" cols="2">
+                    <v-icon class="share" color="white">mdi-arrow-up-bold-box-outline</v-icon>
+                    <v-icon class="heart" color="white">mdi-heart-outline</v-icon>
+                    <v-icon class="right" color="white">mdi-chevron-right</v-icon>
+                </v-col>
+               
+               
+                
+            </v-row>
         </v-container>
     </v-container>
 </template>
@@ -53,25 +66,24 @@ export default {
 <style>
  .image{
     width: 100%;
-    
- }
- .VueCarousel-inner{
-     transition: opacity 1s ease-in-out 0s!important;
- }
- .slider{
-     margin: -10px 0;
- }
- .VueCarousel-pagination[data-v-438fd353]{
-     margin: -46px 0!important;
- }
- .title{
-     color:turquoise;
-     font-size: 1rem;
-     font-weight: 400;
- }
- .imgBGblack{
-     background-color: black;
- }
+    }
+    .VueCarousel-inner{
+        transition: opacity 1s ease-in-out 0s!important;
+    }
+    .slider{
+        margin: -10px 0;
+    }
+    .VueCarousel-pagination[data-v-438fd353]{
+        margin: -46px 0!important;
+    }
+    .title{
+        color:turquoise;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .imgBGblack{
+        background-color: black;
+}
 @media only screen and (min-width: 1264px) 
   and ( max-width: 2000px){
   .slider{
@@ -81,8 +93,41 @@ export default {
 }
 @media only screen and (min-device-width : 320px)
         and (max-device-width : 767px) {
-        .slider {
+    .slider {
         margin: 3px 0;
+    }
+    .imgBGblack .childContainer{
+        margin-top: 42px;
+        padding: 0 0;
+    }
+    .upperIcons{
+        width: 100%;
+        height: 200px;
+        position:absolute;
+        top: 56px;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.45) 1%, rgba(18,17,18,0.1) 20%, rgba(36,35,36,0.05) 21%, rgba(237,237,237,0.05) 32%);   
+    }
+
+    .upperIcons .left{
+        top: 75px;
+        left: -3px;
+        font-size: 55px;
+    }
+    .upperIcons .share{
+        top: -8px;
+        font-size: 25px;
+    }
+    .upperIcons .heart{
+        top: -8px;
+        font-size: 25px;
+    }
+    .upperIcons .right{
+        top: 48px;
+        right: -14px;
+        font-size: 55px;
+    }
+    .VueCarousel-dot{
+        padding: 4px!important;
     }
 }
 </style>

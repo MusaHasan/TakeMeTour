@@ -62,8 +62,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
-
 
 export default {
     data:()=>({
@@ -112,6 +110,33 @@ export default {
     margin-right: 14px;
     font-size: 58px;
   }
+
+
+  
+.zoomer {
+  position: relative;
+  width: 640px;
+  height: 640px;
+  border: 0;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+.zoomer:hover {
+  cursor: move;
+}
+.zoomer:hover .normal {
+  opacity: 0;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.zoomer:hover .plus {
+  opacity: 0;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
 
   
   @media only screen

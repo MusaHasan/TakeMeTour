@@ -9,10 +9,27 @@
         dark
     >
     
-        <v-img class="pl-1" max-width="145" max-height="22" src="../assets/images/asset 0.png"></v-img>
+        <v-img class="pl-1 navbarTitelImg" max-width="145" max-height="22" src="../assets/images/asset 0.png"></v-img>
         <v-spacer class="d-md-none"></v-spacer>
-        <v-btn class="mx-3 body-2 font-weight-light white--text text-capitalize " max-width="109" max-height="32" tile style="background-color:#21D366">Contact Us</v-btn>
-        <v-spacer></v-spacer>
+        <v-btn class="mx-2 mx-md-3 mx-lg-3 mx-xl-3 navBtnContact body-2 font-weight-light white--text text-capitalize " max-width="109" max-height="32" tile style="background-color:#21D366">Contact Us</v-btn>
+        <v-list-item style="max-width: fit-content;" class="hidden-lg-and-up px-0"> 
+              <v-menu offset-y>
+                <template v-slot:activator="{ on }">
+                  <v-list-item-title class="black--text"  v-on="on" >USD
+                    <v-icon size="20" class="black--text font-weight-thin">mdi-chevron-down</v-icon>
+                  </v-list-item-title>
+                </template>
+                <v-list>
+                  <v-list-item
+                    v-for="(item, index) in items"
+                    :key="index"
+                  >
+                  <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-menu> 
+          </v-list-item>
+        <v-spacer class="hidden-sm-and-down"></v-spacer>
         <v-list class="d-md-flex d-lg-flex hidden-sm-and-down transparent ">
 
             <v-list-item class="px-0"> 
@@ -118,8 +135,8 @@
                 <v-list-item> 
                   <v-menu offset-y>
                     <template v-slot:activator="{ on }">
-                      <v-list-item-subtitle style="color: rgb(0, 0, 0) !important; font-weight: 500;"  v-on="on" >Where to go?
-                        <v-icon class="grey--text">mdi-chevron-down</v-icon>
+                      <v-list-item-subtitle style="color: rgb(0, 0, 0) !important; font-weight: 500; margin-left: 20px;"  v-on="on" >Where to go?
+                        <v-icon style="margin-left:36px" class="grey--text">mdi-chevron-down</v-icon>
                       </v-list-item-subtitle>
                     </template>
                     <v-list>
@@ -136,8 +153,8 @@
                 <v-list-item> 
                   <v-menu offset-y>
                     <template v-slot:activator="{ on }">
-                      <v-list-item-subtitle style="color: rgb(0, 0, 0) !important; font-weight: 500;"  v-on="on" >Travel Products
-                        <v-icon class="grey--text">mdi-chevron-down</v-icon>
+                      <v-list-item-subtitle style="color: rgb(0, 0, 0) !important; font-weight: 500; margin-left: 20px;"  v-on="on" >Travel Products
+                        <v-icon style="margin-left:24px" class="grey--text">mdi-chevron-down</v-icon>
                       </v-list-item-subtitle>
                     </template>
                     <v-list>
@@ -199,5 +216,17 @@
     } 
     .sideBarBg .v-navigation-drawer--is-mobile{
       box-shadow: unset!important;
+    }
+    @media only screen
+    and (min-device-width : 300px)
+    and (max-device-width : 767px){
+    .navBtnContact{
+      max-width: 83px!important;
+      margin-top: -5px;
+    }
+    .navbarTitelImg .v-image__image{
+       width: 100%!important;
+    }
+
     }
 </style>

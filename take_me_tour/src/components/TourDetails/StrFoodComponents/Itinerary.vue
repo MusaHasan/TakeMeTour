@@ -6,10 +6,10 @@
           <v-col cols="12" class="py-0 textOrng"><span class="dot">.</span>18:30</v-col>
           <v-col cols="12" class="orengeLine2 py-2"> <p class="lightTxtP"> Meet up at MRT Station (Hua Lamphong, Wat Mangkon) </p></v-col>
           <v-col cols="12" class="py-0 textOrng"><span class="dot">.</span>  19:00</v-col>
-          <v-col cols="12" class="orengeLine3 py-2" ><p class="lightTxtP">We'll start the trip by taking you to the numerous food stalls and restaurants hidden in the backstreets of Bangkok Chinatown. Here! Let's taste some amazing Thai-Chinese food and desserts such as noodle, seafood, rice with barbecued pork, roasted duck, custard bun and cold Thai desserts. These are just a few examples!</p></v-col>
+          <v-col cols="12" class="orengeLine3 py-2" ><p class="lightTxtP">We'll start the trip by taking you to the numerous food stalls and restaurants hidden in the backstreets of <span style="color:#1cb6e6">Bangkok</span> Chinatown. Here! Let's taste some amazing Thai-Chinese food and desserts such as noodle, seafood, rice with barbecued pork, roasted duck, custard bun and cold Thai desserts. These are just a few examples!</p></v-col>
           <v-col cols="12" class="py-0 textOrng"><span class="dot">.</span>19:00</v-col>
           
-          <v-col cols="12"><p class="lightTxtP">We'll start the trip by taking you to the numerous food stalls and restaurants hidden in the backstreets of Bangkok Chinatown. Here! Let's taste some amazing Thai-Chinese food and desserts such as noodle, seafood, rice with barbecued pork, roasted duck, custard bun and cold Thai desserts. These are just a few examples!</p></v-col>
+          <v-col cols="12"><p class="lightTxtP">We'll start the trip by taking you to the numerous food stalls and restaurants hidden in the backstreets of <span style="color:#1cb6e6">Bangkok</span> Chinatown. Here! Let's taste some amazing Thai-Chinese food and desserts such as noodle, seafood, rice with barbecued pork, roasted duck, custard bun and cold Thai desserts. These are just a few examples!</p></v-col>
           <v-col cols="12"><p class="lightTxtP">When we finish drinking, I will send you back to MRT Wat Mangkon Station. Hope you enjoyed the trip, and have a good night!</p></v-col>
 
       </v-row>
