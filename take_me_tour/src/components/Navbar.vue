@@ -52,7 +52,7 @@
             </v-list-item>
 
             <div class="my-2 mx-2">
-              <v-btn class="px-0" text large color="orange darken-3" > <v-img class="mx-4" max-width="16" max-height="17" src="../assets/Tourimage/asset 95.jpg"></v-img> <span class="black--text">Deals</span> </v-btn>
+              <v-btn class="px-1" text large color="orange darken-3" > <v-img class="mx-2" max-width="16" max-height="17" src="../assets/Tourimage/asset 95.jpg"></v-img> <span class="black--text">Deals</span> </v-btn>
             </div>
 
             <div class="my-2 mx-2">
