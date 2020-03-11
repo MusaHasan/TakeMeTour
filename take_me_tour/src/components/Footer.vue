@@ -20,7 +20,7 @@
                                     :elevation="hover ? 12 : 0"
                                     :class="{ 'on-hover': hover, activeBtn1 : isActive1 }"
                                     >
-                                        <span class="mr-12">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                                        <span class="mr-12">US Dollar</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
                                     </v-btn>
                                 </v-hover>
                             </template>
@@ -51,7 +51,7 @@
                                     :elevation="hover ? 12 : 0"
                                     :class="{ 'on-hover': hover, activeBtn2 : isActive2 }"
                                     >
-                                        <span class="mr-12 ">Dropdown</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
+                                        <span class="mr-12 ">United States</span><v-icon color="orange darken-4">mdi-chevron-down</v-icon>
                                     </v-btn>
                                 </v-hover>
                             </template>

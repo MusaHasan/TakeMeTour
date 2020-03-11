@@ -15,11 +15,11 @@
         <v-spacer></v-spacer>
         <v-list class="d-md-flex d-lg-flex hidden-sm-and-down transparent ">
 
-            <v-list-item> 
+            <v-list-item class="px-0"> 
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-list-item-subtitle class="grey--text"  v-on="on" >Where to go?
-                    <v-icon class="grey--text">mdi-chevron-down</v-icon>
+                  <v-list-item-subtitle class="black--text"  v-on="on" >Where to go?
+                    <v-icon class="black--text font-weight-thin">mdi-chevron-down</v-icon>
                   </v-list-item-subtitle>
                 </template>
                 <v-list>
@@ -33,11 +33,11 @@
               </v-menu> 
             </v-list-item>
 
-            <v-list-item> 
+            <v-list-item class="px-0"> 
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-list-item-subtitle class="grey--text"  v-on="on" >Travel Products
-                    <v-icon class="grey--text">mdi-chevron-down</v-icon>
+                  <v-list-item-subtitle class="black--text"  v-on="on" >Travel Products
+                    <v-icon class="black--text .font-weight-thin">mdi-chevron-down</v-icon>
                   </v-list-item-subtitle>
                 </template>
                 <v-list>
@@ -52,11 +52,11 @@
             </v-list-item>
 
             <div class="my-2 mx-2">
-              <v-btn text large color="orange darken-3" > <v-img class="mx-4" max-width="16" max-height="17" src="../assets/Tourimage/asset 95.jpg"></v-img> <span class="grey--text">Deals</span> </v-btn>
+              <v-btn class="px-0" text large color="orange darken-3" > <v-img class="mx-4" max-width="16" max-height="17" src="../assets/Tourimage/asset 95.jpg"></v-img> <span class="black--text">Deals</span> </v-btn>
             </div>
 
             <div class="my-2 mx-2">
-              <v-btn height= "38" outlined large color="orange darken-3">log In</v-btn>
+              <v-btn class="px-0" height= "38" outlined large color="orange darken-3">log In</v-btn>
             </div>
 
             <div class="my-2 mx-2">
@@ -66,8 +66,8 @@
             <v-list-item> 
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-list-item-title class="grey--text"  v-on="on" >USD
-                    <v-icon class="grey--text">mdi-chevron-down</v-icon>
+                  <v-list-item-title class="black--text"  v-on="on" >USD
+                    <v-icon class="black--text font-weight-thin">mdi-chevron-down</v-icon>
                   </v-list-item-title>
                 </template>
                 <v-list>

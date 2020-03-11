@@ -2,14 +2,14 @@
 <v-container fluid class="pa-0 BodyBGcolot">
   <v-container class="childContainer">
       <v-row >
-          <h2 class="TitelTxt mb-4">Popular Destinations</h2>
+          <h2 class="TitelTxt mb-6">Popular Destinations</h2>
         <v-sheet
           class="mx-auto transparent"
           elevation="0"
           max-width="100%"
         >
           <v-slide-group
-            class="pa-0"
+            class="pa-0 sliderContainer"
           >
             <v-slide-item
               v-for="(image,i) in images"

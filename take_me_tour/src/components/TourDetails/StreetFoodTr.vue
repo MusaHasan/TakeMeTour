@@ -39,7 +39,7 @@
                             </v-menu>
                         </v-col><!--Date-->
                         
-                        <v-col cols="11" class="d-flex py-2 my-0">
+                        <v-col cols="11" class="d-flex pt-4 pb-2 my-0">
                             <h5 class="mx-2">Adults</h5>
                             <v-spacer></v-spacer>
                             <v-btn min-width="44" class=" addBtn px-2 " outlined color="teal">

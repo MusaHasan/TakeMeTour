@@ -9,7 +9,7 @@
                   Book any tour & be one with the locals. It’s a lifetime experience you simply can’t find anywhere else!
               </p>
               <p class="bodytxt">
-                  Tell me more
+                  Tell me more <v-icon color="white">mdi-chevron-right</v-icon>
               </p>
           </v-col>
 

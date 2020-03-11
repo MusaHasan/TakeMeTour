@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="py-0">
       <v-row>
           <v-col cols="12">
               <h3 class="mb-4">Price Conditions</h3>

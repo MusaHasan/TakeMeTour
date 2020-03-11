@@ -22,7 +22,7 @@
                 empty-icon="$ratingFull"
                 class="py-3"
                 ></v-rating>
-                <v-btn class="ma-2 white--text" color="rgb(50, 214, 114)">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
+                <v-btn class="ma-2 px-2 white--text" height="33" color="rgb(50, 214, 114)">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
           </v-col>
       </v-row>
       <v-row class="bgLiteBlue"> <!--Massage section-->

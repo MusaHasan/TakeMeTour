@@ -1,8 +1,8 @@
 <template>
-  <v-container>
+  <v-container class="py-0">
       
         <v-row >
-            <v-col md="7" lg="7" xl="7" cols="12" >
+            <v-col class="py-0" md="7" lg="7" xl="7" cols="12" >
                 <div class="d-flex">
                     <h3 class="mt-3 d-flex">Reviews <p class="ml-1 mt-1">(50)</p></h3> 
                     <v-spacer/>

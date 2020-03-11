@@ -2,14 +2,14 @@
 <v-container fluid class="pa-0 BodyBGcolot">
   <v-container class="childContainer">
       <v-row >
-          <h2 class="TitelTxt mb-4">Traveler's Reviews</h2>
+          <h2 class="TitelTxt mb-6">Traveler's Reviews</h2>
         <v-sheet
           class="mx-auto mb-8 transparent"
           elevation="0"
           max-width="100%"
         >
           <v-slide-group
-            class="pa-0"
+            class="pa-0 sliderContainer"
           >
             <v-slide-item
               v-for="(image,i) in images"
@@ -19,7 +19,7 @@
               <v-card
                 class="ma-1 TrvRevCrd"
                 height="180"
-                width="365"
+                width="363"
                 elevation="0"
                 :ripple="false"
               >
@@ -140,9 +140,6 @@ export default {
       font-size: 10px;
       font-weight: 400;
       font-family: 'Open Sans'!important;
-    }
-    .cardTxt{
-
     }
   }
 </style>

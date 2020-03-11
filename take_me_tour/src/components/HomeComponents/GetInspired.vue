@@ -2,14 +2,14 @@
 <v-container fluid class="pa-0 BodyBGcolot">
     <v-container class="childContainer pt-0">
       <v-row >
-          <h2 class="TitelTxt TitleGet mb-4">Get Inspired</h2>
+          <h2 class="TitelTxt TitleGet mb-6">Get Inspired</h2>
         <v-sheet
           class="mx-auto transparent"
           elevation="0"
           max-width="100%"
         >
           <v-slide-group
-            class="pa-0"
+            class="pa-0 sliderContainer"
           >
             <v-slide-item
               v-for="(image,i) in images"
@@ -103,6 +103,16 @@ export default {
   .TitleGet{
     margin: -2px 35px!important;
   }
+
+  .sliderContainer .v-slide-group__next .v-icon.v-icon{
+    margin-left: 14px;
+    font-size: 58px;
+  }
+  .sliderContainer .v-slide-group__prev .v-icon.v-icon{
+    margin-right: 14px;
+    font-size: 58px;
+  }
+
   
   @media only screen
     and (min-device-width : 320px)

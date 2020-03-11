@@ -2,13 +2,13 @@
 <v-container fluid class="pa-0 BodyBGcolot">
     <v-container class="childContainer">
       <v-row >
-          <h2 class="TitelTxt mb-4">Tour Available Tomorrow</h2>
+          <h2 class="TitelTxt mb-6">Tour Available Tomorrow</h2>
         <v-sheet
           class="mx-auto transparent "
           max-width="100%"
         >
           <v-slide-group
-            class="pa-2"
+            class="pa-2 sliderContainer" 
           >
             <v-slide-item
               v-for="(image,i) in images"
