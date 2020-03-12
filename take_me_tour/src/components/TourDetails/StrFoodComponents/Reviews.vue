@@ -20,7 +20,7 @@
                         <v-list-item-subtitle style="padding-right: 113px" > <p>Friendliness</p>  </v-list-item-subtitle>
                         </v-list-item-content>
 
-                        <v-list-item-icon class="pl-12 my-0 ml-12"> 
+                        <v-list-item-icon class="pl-0 pl-md-12 pl-lg-12 pl-xl-12 my-0 ml-5 ml-md-12 ml-lg-12 ml-xl-12 "> 
                             <v-rating
                                 color="yellow darken-3"
                                 background-color="yellow darken-3"
