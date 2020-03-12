@@ -93,9 +93,13 @@ export default {
 }
 @media only screen and (min-device-width : 320px)
         and (max-device-width : 767px) {
-    .slider {
-        margin: 3px 0;
+    
+    
+    .slider{
+        margin: 0px 16px;
+        padding-bottom: 23px;
     }
+    
     .imgBGblack .childContainer{
         margin-top: 42px;
         padding: 0 0;
@@ -115,6 +119,7 @@ export default {
     }
     .upperIcons .share{
         top: -8px;
+        left: -15px;
         font-size: 25px;
     }
     .upperIcons .heart{
@@ -123,11 +128,45 @@ export default {
     }
     .upperIcons .right{
         top: 48px;
-        right: -14px;
+        right: -27px;
         font-size: 55px;
     }
     .VueCarousel-dot{
         padding: 4px!important;
+    }
+}
+@media only screen and (max-device-width: 360px)
+ {
+   .slider{
+        margin: 3px 0;
+        padding-bottom: 23px;
+    }
+    .upperIcons .left{
+        top: 70px;
+        left: -3px;
+        font-size: 55px;
+    }
+    .upperIcons .right{
+        top: 42px;
+        right: -14px;
+        font-size: 55px;
+    }
+}
+@media only screen and (max-device-width: 320px)
+ {
+   .slider{
+        margin: 3px 0;
+        padding-bottom: 23px;
+    }
+    .upperIcons .left{
+        top: 68px;
+        left: -3px;
+        font-size: 55px;
+    }
+    .upperIcons .right{
+        top: 38px;
+        right: -14px;
+        font-size: 55px;
     }
 }
 </style>

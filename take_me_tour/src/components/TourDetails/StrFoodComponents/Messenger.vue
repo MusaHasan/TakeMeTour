@@ -62,7 +62,7 @@
                 empty-icon="$ratingFull"
                 class="py-3"
                 ></v-rating>
-                <v-btn class="ma-2 px-2 white--text" height="33" color="rgb(50, 214, 114)">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
+                <v-btn class="ma-2 px-2 white--text" style="font-size: 12px!important; font-weight: 600;" height="29" width="108" color="rgb(22, 196, 100)">50 reviews <v-icon>mdi-chevron-right</v-icon></v-btn>
           </v-col>
       </v-row>
       <v-row class="bgLiteBlue"> <!--Massage section-->
@@ -168,7 +168,7 @@
             </div>  
         </v-col> <!--icons-->
             
-      </v-row>
+      </v-row> <!--icons-->
   </v-container>
 </template>
 

@@ -38,8 +38,8 @@
                         <p class="timeTxt"><v-icon small>mdi-clock-outline</v-icon> 08:00- 19:00</p>
                       </v-col>
                       <v-spacer/>
-                      <v-col cols="6">
-                        <p class="caption mt-4" > <span class=" green--text">USD 88.85</span> / <span class="personTxt">person</span> </p>
+                      <v-col md="6" lg="6" xl="6" cols="6">
+                        <p class="mt-4 cardPrice" > <span class=" green--text">USD 88.85</span> / <span class="personTxt">person</span> </p>
                       </v-col>
                     </v-row>
                     </v-card-text>
@@ -108,24 +108,45 @@ export default {
           width: 343px!important;
           height: 370px!important;
       }
+      .cardPrice{
+        font-size: 0.75rem !important;
+      }
   @media only screen
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
       .SimilarCrd{
         width: 100%!important;
-        height: 370px!important;
+        height: 450px!important;
+      }
+      .cardPrice{
+        font-size: 16px!important;
+        margin-left: 30px;
       }
       .SimilheartIc{
-        top: -171px;
-        left: 86%;
+        top: -252px;
+        left: 90%;
         color: white!important;
       }
       .simiHeadTxt{
         text-align: center!important;
       }
       .simi-image{
-        height: 218px;
+        height: 292px;
         width: 100%;
+      }
+    }
+     @media only screen and (max-device-width: 320px)
+    { 
+      .cardPrice{
+        font-size: 9px!important;
+      }
+    }
+     @media only screen and (max-device-width: 360px)
+    { 
+      
+      .cardPrice{
+        font-size: 16px!important;
+        margin-left: 9px;
       }
     }
 

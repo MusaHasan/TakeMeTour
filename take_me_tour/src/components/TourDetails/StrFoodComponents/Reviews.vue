@@ -3,7 +3,7 @@
       
         <v-row >
             <v-col class="py-0" md="7" lg="7" xl="7" cols="12" >
-                <div class="d-flex">
+                <div class="d-flex mr-3 mr-md-0 mr-lg-0 mr-xl-0">
                     <h3 class="mt-3 d-flex">Reviews <p class="ml-1 mt-1">(50)</p></h3> 
                     <v-spacer/>
                     <v-rating
@@ -93,13 +93,13 @@
                         </v-list>
                     </v-menu> <!--Btn2-->
                 </div>
-            </v-col>
+            </v-col> <!--Ratings-->
             <v-col cols="5" class="hidden-sm-and-down"></v-col>
             
         </v-row> <!--Reatings Button-->
 
         <v-row class="RvwImgRow1">
-            <v-col class="RvwImgCol1" cols="3" v-for="(image,i) in images"
+            <v-col class="RvwImgCol1 pa-0 pa-md-2 pa-lg-2 pa-xl-2" cols="3" v-for="(image,i) in images"
                 :key="i">
                 <v-card
                     class="my-1 RvwImgCrd"
@@ -115,7 +115,7 @@
                     </v-img>
                 </v-card>
             </v-col> <!--Review images -->
-            <v-col cols="2" class="RvwImgCol1" >
+            <v-col cols="2" class="RvwImgCol1 pt-0" >
                 <v-card
                     class="ma-1 RvwImgCrd"
                     height="128"
@@ -502,17 +502,17 @@ export default {
     and (min-device-width : 320px)
     and (max-device-width : 767px) {
         .RvwImgCrd{
-        width: 60px!important;
-        height: 60px!important;
+        width: 68px!important;
+        height: 70px!important;
         }
         .reatingTxt {
             padding-right: 120px;
         }
         .RvwImgRow1 {
-            padding-left: 8px;
+            padding-left: 18px;
         }
         .RvwImgCol1 {
-            margin: 0 -8px;
+            margin: 0 -7px;
         }
 
         .RvwImgCrd2 {
@@ -539,7 +539,7 @@ export default {
             
         }
         .allCountries{
-            width: 183px!important;
+            width: 179px!important;
         }
         .sortRecent{
             width: 183px!important;

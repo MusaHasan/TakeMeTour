@@ -11,12 +11,12 @@
     
         <v-img class="pl-1 navbarTitelImg" max-width="145" max-height="22" src="../assets/images/asset 0.png"></v-img>
         <v-spacer class="d-md-none"></v-spacer>
-        <v-btn class="mx-2 mx-md-3 mx-lg-3 mx-xl-3 navBtnContact body-2 font-weight-light white--text text-capitalize " max-width="109" max-height="32" tile style="background-color:#21D366">Contact Us</v-btn>
+        <v-btn class="mx-1 mx-md-3 mx-lg-3 mx-xl-3 navBtnContact body-2 font-weight-light white--text text-capitalize " max-width="109" max-height="32" tile style="background-color:#21D366">Contact Us</v-btn>
         <v-list-item style="max-width: fit-content;" class="hidden-lg-and-up px-0"> 
               <v-menu offset-y>
                 <template v-slot:activator="{ on }">
-                  <v-list-item-title class="black--text"  v-on="on" >USD
-                    <v-icon size="20" class="black--text font-weight-thin">mdi-chevron-down</v-icon>
+                  <v-list-item-title style="font-size:12px!important" class="black--text"  v-on="on" >USD
+                    <v-icon size="18" class="black--text mb-2 font-weight-thin">mdi-chevron-down</v-icon>
                   </v-list-item-title>
                 </template>
                 <v-list>
@@ -212,7 +212,7 @@
       margin-top: 56px!important;
     }
     .sideBarBg{
-      margin-left: -9px;
+      margin-left: -6px;
     }
     .sideBarBg .v-overlay__scrim{
       margin: 56px 0;
@@ -231,5 +231,14 @@
        width: 100%!important;
     }
 
+    }
+    @media only screen and (max-device-width: 320px)
+    {
+      .sideBarBg{
+      margin-left: -17px;
+    }
+    .navBtnContact{
+      margin:0 0 !important;
+    }
     }
 </style>

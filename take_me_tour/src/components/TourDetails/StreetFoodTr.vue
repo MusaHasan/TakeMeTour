@@ -102,7 +102,7 @@
                         </v-col>
                         
                         <v-col cols="11" class="d-flex py-0 my-0">
-                            <v-spacer/> <p>100% Satisfaction guaranteed</p>
+                            <v-spacer/> <p style="font-size:13px!important">100% Satisfaction guaranteed</p>
                         </v-col>
                         <v-btn dense class="mx-2 white--text" style="padding: 0 114px;
                         margin-left: 13px!important; font-weight: 700; font-size: 15px; background-color:rgb(22, 196, 100)"  width="84%">
