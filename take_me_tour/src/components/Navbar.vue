@@ -211,6 +211,9 @@
     .sideBar{
       margin-top: 56px!important;
     }
+    .sideBarBg{
+      margin-left: -9px;
+    }
     .sideBarBg .v-overlay__scrim{
       margin: 56px 0;
     } 

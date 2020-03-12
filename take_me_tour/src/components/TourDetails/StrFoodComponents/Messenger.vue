@@ -47,8 +47,8 @@
           <v-col class="pt-1 pt-md-9 pt-lg-9 pt-xl-9 pb-0" md="8"  lg="8" xl="8" cols="12">
               <h3 class="d-inline">Street Food Tour in Bangkok Chinatown</h3> 
           </v-col>
-          <v-col cols="2"><v-btn class="ma-2 hidden-sm-and-down" text color="indigo"><v-icon>mdi-briefcase-upload-outline</v-icon> Share</v-btn></v-col>
-          <v-col cols="2"><v-btn class="ma-2 hidden-sm-and-down" text color="indigo"><v-icon>mdi-heart-outline</v-icon> Wishlist</v-btn></v-col>
+          <v-col cols="2"><v-btn class="mt-4 hidden-sm-and-down" text color="rgb(136, 150, 155)"><v-icon class="mr-2">mdi-briefcase-upload-outline</v-icon> Share</v-btn></v-col>
+          <v-col cols="2"><v-btn class="mt-4 hidden-sm-and-down" text color="rgb(136, 150, 155)"><v-icon class="mr-2">mdi-heart-outline</v-icon> Wishlist</v-btn></v-col>
       </v-row><!--Street Food Title share, wishlist ICon-->
       <v-row>
           <v-col cols="12" class="d-flex py-0">
@@ -96,7 +96,7 @@
       </v-row>
       <v-row >
 
-        <v-col class="ml-md-10 ml-lg-10 ml-xl-10 mr-md-3 mr-lg-3 mr-xl-3 px-6 text-center" md="2" lg="2" xl="2" cols="4">
+        <v-col class="ml-md-10 ml-lg-10 ml-xl-10 mr-md-3 mr-lg-3 mr-xl-3 py-0 px-6 text-center" md="2" lg="2" xl="2" cols="4">
             <v-avatar color="white" class="mt-6" size="35">
             <span class="white--text headline">
                 <v-img
@@ -105,10 +105,10 @@
                     ></v-img>
             </span>
             </v-avatar>
-            <h5 class="iconName">Hosted by locals</h5>    
+            <h5 class="iconName">Hosted by locals <v-icon small color="red" >mdi-information-outline</v-icon></h5>    
         </v-col> <!--icons-->
 
-        <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
+        <v-col class="pl-2 py-0"  md="2" lg="2" xl="2" cols="4">
             <v-avatar class="mx-9 mt-6" color="white" size="35">
             <span class="white--text headline">
                 <v-img
@@ -123,7 +123,7 @@
             </div>    
         </v-col> <!--icons-->
 
-        <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
+        <v-col class="pl-2 py-0"  md="2" lg="2" xl="2" cols="4">
             <v-avatar class="mx-9 mt-6" color="white" size="35">
                 <span class="white--text headline">
                     <v-img
@@ -138,7 +138,7 @@
             </div>   
         </v-col> <!--icons-->
 
-        <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
+        <v-col class="pl-2 py-0"  md="2" lg="2" xl="2" cols="4">
             <v-avatar class="mx-9 mt-6" color="white" size="35">
             <span class="white--text headline">
                 <v-img
@@ -153,7 +153,7 @@
              </div>    
         </v-col> <!--icons-->
 
-        <v-col class="pl-2"  md="2" lg="2" xl="2" cols="4">
+        <v-col class="pl-2 py-0"  md="2" lg="2" xl="2" cols="4">
             <v-avatar class="mx-9 mt-6" color="white" size="35">
             <span class="white--text headline">
                 <v-img 

@@ -4,11 +4,11 @@
       <v-row class="pt-12 mt-12 orengBg">
           <div class="backgroundTMT">
           <v-col md="8" lg="8" xl="8" cols="12" class="px-8 white--text">
-              <h2 class="headtxt py-5">What’s a Day Like with <span class="headTxtFocus">TakeMeTour?</span> </h2>
+              <h2 class="headtxt py-5 px-md-0 px-lg-0 px-xl-0 px-4">What’s a Day Like with <span class="headTxtFocus">TakeMeTour?</span> </h2>
               <p class="bodytxt">Unlike others, all tours are led by true Local Experts. They’ll open your eyes to see much more than what your typical guidebooks suggest. 
                   Book any tour & be one with the locals. It’s a lifetime experience you simply can’t find anywhere else!
               </p>
-              <p class="bodytxt">
+              <p class="bodytxt mb-0">
                   Tell me more <v-icon color="white">mdi-chevron-right</v-icon>
               </p>
           </v-col>
@@ -85,7 +85,11 @@ export default {
             font-size: 30px;
         }
         .bodytxt{
-            text-align: center
+            text-align: center;
+            padding: 0 13px;
+            font-weight: 600!important;
+            line-height: 18px!important;
+            font-size: 14px!important;
         }
         .orengBg{
             margin-left: 0;

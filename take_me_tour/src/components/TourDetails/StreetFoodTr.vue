@@ -11,7 +11,7 @@
                 <reviews/>
             </v-col><!--Mother Col 1-->
             <v-col cols="4" class="hidden-sm-and-down">
-                <v-banner style="border: 1px solid rgb(226, 236, 240); border-radius: 6px; top:60px!important;" width="94%" sticky>
+                <v-banner class="instantBookBtn" style="border: 1px solid rgb(226, 236, 240); border-radius: 6px; top:60px!important;" width="90%" sticky>
                     <v-row>
                         
                         <v-col cols="11">
@@ -39,36 +39,41 @@
                             </v-menu>
                         </v-col><!--Date-->
                         
-                        <v-col cols="11" class="d-flex pt-4 pb-2 my-0">
-                            <h5 class="mx-2">Adults</h5>
+                        <v-col cols="11" class="d-flex pt-4 pb-0 my-0">
+                            <h5 class="mt-1 mx-3">Adults</h5>
                             <v-spacer></v-spacer>
-                            <v-btn min-width="44" class=" addBtn px-2 " outlined color="teal">
+                            <v-btn min-width="32" height="32" class=" addBtn " outlined color="rgb(66, 94, 108)">
                                 <v-icon >mdi-minus</v-icon>
                             </v-btn>
                             <p class="my-2"> 10 </p>
-                            <v-btn min-width="44" class="addBtn px-2" outlined color="teal">
+                            <v-btn min-width="32" height="32" class="addBtn" outlined color="rgb(66, 94, 108)">
                                 <v-icon>mdi-plus</v-icon>
                             </v-btn>
                         </v-col><!--Adults-->
 
                         <v-col cols="11" class="d-flex py-2 my-0">
-                            <h5>Children</h5>
+                            <div>
+                                <h5 class=" mt-1 mx-3">Children</h5>
+                                <p style="font-size:10px!important" class=" my-0  mx-3">Age 2-12</p>
+                            </div>
                             <v-spacer></v-spacer>
-                            <v-btn min-width="44" disabled class="addBtn px-2" outlined color="teal">
+                            <v-btn min-width="32" height="32" disabled class="addBtn" outlined color="rgb(66, 94, 108)">
                                 <v-icon>mdi-minus</v-icon>
                             </v-btn>
                             <p class="my-2"> 10 </p>
-                            <v-btn min-width="44" class="addBtn px-2" outlined color="teal">
+                            <v-btn min-width="32" height="32" class="addBtn" outlined color="rgb(66, 94, 108)">
                                 <v-icon>mdi-plus</v-icon>
                             </v-btn>
                         </v-col><!--Children-->
 
+                        <v-col cols="11" class="py-0 my-1" style="border-bottom: 1px solid rgb(226, 236, 240)"></v-col>
+
                         <v-col cols="11" class="d-flex py-1 my-0">
-                         <p>USD 34.88 x 2 adults</p> <v-spacer/> <p>USD 69.75</p>
+                         <p class="mb-0">USD 34.88 x 2 adults</p> <v-spacer/> <p class="mb-0">USD 69.75</p>
                         </v-col>
                         
                         <v-col cols="11" class="d-flex py-1 my-0">
-                            <p>Booking fee + tax </p>
+                            <p class="mb-0">Booking fee + tax </p>
                                 <div class="text-center">
                                     <v-menu offset-y>
                                         <template v-slot:activator="{ on }">
@@ -85,22 +90,22 @@
                                         </v-list>
                                     </v-menu>
                                 </div>
-                             <v-spacer/> <p>USD 69.75</p>
+                             <v-spacer/> <p class="mb-0">USD 69.75</p>
                         </v-col>
                         
                         <v-col cols="11" class="d-flex py-2 my-0">
-                            <p>Accident Insurance</p> <v-spacer/> <h6 class="GreenTxt">FREE</h6>
+                            <p class="mb-0">Accident Insurance</p> <v-spacer/> <h6 class="GreenTxt mb-0">FREE</h6>
                         </v-col>
                         
                         <v-col cols="11" class="d-flex py-2 my-0">
-                            <h5>Total</h5> <v-spacer/> <h5  class="GreenTxt" >USD 69.75</h5>
+                            <h5>Total</h5> <v-spacer/> <h5  class="GreenTxtUSD" >USD 69.75</h5>
                         </v-col>
                         
                         <v-col cols="11" class="d-flex py-0 my-0">
                             <v-spacer/> <p>100% Satisfaction guaranteed</p>
                         </v-col>
                         <v-btn dense class="mx-2 white--text" style="padding: 0 114px;
-                        margin-left: 13px!important; background-color:#32D672"  width="86%">
+                        margin-left: 13px!important; font-weight: 700; font-size: 15px; background-color:rgb(22, 196, 100)"  width="84%">
                         Instant Book </v-btn>
                     </v-row>
                 </v-banner>
@@ -148,17 +153,25 @@ export default {
         padding: 10px!important;
     }
     .addBtn{
-        margin: 0 8px !important;
-        max-width: 48px!important;
+        margin: 4px 8px !important;
+        max-width: 32px!important;
         
     }
     .GreenTxt{
-        font-weight: 700!important;
+        font-weight: 600!important;
         color: rgb(50, 214, 114)!important;
         font-size: 14px;
     }
+    .GreenTxtUSD{
+       font-weight: 600!important;
+        color: rgb(50, 214, 114)!important;
+        font-size: 16px; 
+    }
     .InfoDiv .v-menu__content {
         margin-left: -76px!important;
+    }
+    .instantBookBtn .v-banner__wrapper {
+        padding: 16px 8px 16px 13px!important;
     }
 
 </style>
